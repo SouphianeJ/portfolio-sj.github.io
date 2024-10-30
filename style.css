@@ -65,7 +65,10 @@ body {
 header {
     background-color: var(--dark-blue);
     color: var(--white);
+    padding-top: 70px; /* Adjust this value based on navbar height */
 }
+/* Padding to push the header below the navbar */
+
 
 header h1 {
     font-family: 'Roboto Slab', serif;
