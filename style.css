@@ -1,0 +1,161 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+    --dark-blue: #0A2540;
+    --light-blue: #0070F3;
+    --light-gray: #F2F4F6;
+    --sage-green: #00C49A;
+    --white: #FFFFFF;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-blue);
+    background-color: var(--light-gray);
+}
+
+/* Header */
+header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.btn-light-blue {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light-blue:hover {
+    background-color: var(--sage-green);
+}
+
+/* About Section */
+#about img {
+    border: 5px solid var(--light-gray);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Titles */
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Timeline for Experience Section */
+#experience .timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--light-blue);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item h3 {
+    font-weight: 700;
+}
+
+.timeline-item p {
+    color: var(--dark-blue);
+}
+
+/* Skills Section */
+#skills h3 {
+    font-size: 1.5em;
+    color: var(--light-blue);
+}
+
+#skills p {
+    font-size: 1em;
+}
+
+/* Project Cards */
+#projects .card {
+    background-color: var(--white);
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Form */
+#contact .form-control {
+    border-radius: 10px;
+    border: 1px solid var(--light-blue);
+}
+
+#contact button {
+    background-color: var(--light-blue);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: var(--sage-green);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--light-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--sage-green);
+}
