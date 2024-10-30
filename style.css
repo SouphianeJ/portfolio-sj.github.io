@@ -23,6 +23,45 @@ body {
 }
 
 /* Header */
+/* Sticky Header */
+.navbar {
+    background-color: var(--dark-blue);
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.navbar .nav-link {
+    color: var(--white);
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--sage-green);
+}
+
+.navbar .navbar-toggler-icon {
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 0.9em;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .navbar .nav-link i {
+        margin-right: 5px;
+    }
+}
+
 header {
     background-color: var(--dark-blue);
     color: var(--white);
