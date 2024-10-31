@@ -25,3 +25,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+function openModal(modalId) {
+    $('#' + modalId).modal('show');
+}
