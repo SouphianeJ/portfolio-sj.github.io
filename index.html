@@ -112,15 +112,25 @@
                     <p class="card-text">Mise en place de la correction automatisée de QCM pour les examens papier, avec développement d'outils en Python et VBA. Ce projet a permis de réduire le temps de correction de 45 jours par session.</p>
                 </div>
             </div>
-            
-            <div class="card col-md-4">
+     <!-- Projects Section -->
+<section id="projects" class="bg-light-gray py-5">
+    <div class="container">
+        <h2 class="text-center">Projets et réalisations</h2>
+        <div class="row">
+            <div class="card col-md-4" onclick="openModal('amcModal')">
+                <div class="card-body">
+                    <h4 class="card-title">Projet AMC</h4>
+                    <p class="card-text">Mise en place de la correction automatisée de QCM pour les examens papier, avec développement d'outils en Python et VBA. Ce projet a permis de réduire le temps de correction de 45 jours par session.</p>
+                </div>
+            </div>
+            <div class="card col-md-4" onclick="openModal('MarshaModal')">
                 <div class="card-body">
                     <h4 class="card-title">Déploiement de Marsha</h4>
                     <p class="card-text">Partenaire pour le déploiement de Marsha, une solution de visio et VOD pour l’Université Paris-Saclay, visant la souveraineté des données éducatives et une alternative nationale à Zoom.</p>
                 </div>
             </div>
             
-            <div class="card col-md-4">
+            <div class="card col-md-4" onclick="openModal('moodleModal')">
                 <div class="card-body">
                     <h4 class="card-title">Développement de tutoriels eCampus</h4>
                     <p class="card-text">Création de tutoriels et supports pédagogiques pour la prise en main d’eCampus, utilisés par plus de 80 000 utilisateurs pour renforcer les compétences numériques des enseignants.</p>
@@ -129,6 +139,38 @@
         </div>
     </div>
 </section>
+
+<!-- Modal Structure for Project Details -->
+<div class="modal fade" id="amcModal" tabindex="-1" aria-labelledby="amcModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="amcModalLabel">Projet AMC - Auto Multiple Choice</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Auto Multiple Choice (AMC) est un logiciel open source facilitant la création, la gestion et la correction automatisée de QCM...</p>
+                <h5>Étapes du projet</h5>
+                <ul>
+                    <li><strong>Analyse des besoins :</strong> Identification des exigences pédagogiques et contraintes techniques.</li>
+                    <li><strong>Installation et configuration :</strong> Déploiement et paramétrage d'AMC selon les besoins spécifiques des utilisateurs.</li>
+                    <li><strong>Formation des utilisateurs :</strong> Création de tutoriels et organisation d’ateliers pratiques pour le personnel.</li>
+                    <li><strong>Automatisation :</strong> Développement de scripts en Python et VBA pour la génération de QCM et le traitement des résultats.</li>
+                    <li><strong>Support et maintenance :</strong> Assistance technique et mise à jour régulière pour assurer une utilisation optimale.</li>
+                </ul>
+                <h5>Résultats obtenus</h5>
+                <ul>
+                    <li><strong>Efficacité accrue :</strong> Réduction significative du temps de correction des QCM.</li>
+                    <li><strong>Précision améliorée :</strong> Élimination des erreurs humaines, garantissant une évaluation juste des étudiants.</li>
+                    <li><strong>Satisfaction des utilisateurs :</strong> Retour positif des enseignants et des étudiants sur la rapidité et la fiabilité du processus.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>       
+            
 
 <!-- Contact Section -->
 <section id="contact" class="container my-5">
