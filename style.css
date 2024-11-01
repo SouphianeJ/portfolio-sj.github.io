@@ -62,6 +62,34 @@ body {
     }
 }
 
+/*scrolling icons*/
+.scrolling-icons-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scrolling-icons {
+  display: flex;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+}
+
+.scrolling-icons i {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* Animation de défilement */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*header*/
 header {
     background-color: var(--dark-blue);
     color: var(--white);
