@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
+// Popup Modal
 function openModal(modalId) {
     $('#' + modalId).modal('show');
 }
