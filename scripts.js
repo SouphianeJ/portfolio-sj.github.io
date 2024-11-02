@@ -15,6 +15,23 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(item);
     });
 });
+//chat gpt style prompt
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "Fais une description de moi";
+    const textElement = document.getElementById("prompt-text");
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            textElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100); // Ajuste la vitesse ici (en millisecondes)
+        }
+    }
+
+    typeWriter();
+});
+
 
 // Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
