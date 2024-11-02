@@ -101,7 +101,7 @@ body {
 
 /*header*/
 header {
-    background-color: var(--dark-blue);
+    /*background-color: var(--dark-blue);*/
     color: var(--white);
     margin-top: 70px; /* Adjust this value based on navbar height */
 }
