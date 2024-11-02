@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < promptText.length) {
             promptElement.innerHTML += promptText.charAt(index);
             index++;
-            setTimeout(typeWriter, 100);
+            setTimeout(typeWriter, 150);
         } else {
             // Affiche la réponse une seconde après la fin de l'écriture du prompt
-            setTimeout(showResponse, 1000);
+            setTimeout(showResponse, 1500);
         }
     }
 
