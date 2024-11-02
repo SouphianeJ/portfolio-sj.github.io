@@ -17,20 +17,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 //chat gpt style prompt
 document.addEventListener("DOMContentLoaded", function() {
-    const text = "Fais une description de moi";
-    const textElement = document.getElementById("prompt-text");
+    const promptText = "Fais une description de moi";
+    const responseText = "Ingénieur pédagogique avec plus de 5 ans d’expérience, j’ai pu construire mon expertise pluridisciplinaire autour de la transformation numérique, la pédagogie et l'accompagnement au changement. J'analyse le travail des équipes pédagogiques pour optimiser leurs pratiques, en prenant en compte aussi bien les processus que les outils. Mon objectif est d’intégrer des solutions efficaces, pédagogiques ou techniques, pour faciliter toute la chaîne.";
+    const promptElement = document.getElementById("prompt-text");
+    const responseElement = document.getElementById("response-text");
+    const responseBox = document.getElementById("response-box");
     let index = 0;
 
     function typeWriter() {
-        if (index < text.length) {
-            textElement.innerHTML += text.charAt(index);
+        if (index < promptText.length) {
+            promptElement.innerHTML += promptText.charAt(index);
             index++;
-            setTimeout(typeWriter, 100); // Ajuste la vitesse ici (en millisecondes)
+            setTimeout(typeWriter, 100);
+        } else {
+            // Affiche la réponse une seconde après la fin de l'écriture du prompt
+            setTimeout(showResponse, 1000);
         }
+    }
+
+    function showResponse() {
+        responseBox.style.display = "block";
+        responseElement.textContent = responseText;
     }
 
     typeWriter();
 });
+
 
 
 // Smooth scroll for internal links
