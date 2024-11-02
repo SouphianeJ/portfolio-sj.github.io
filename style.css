@@ -109,7 +109,8 @@ header {
 .header-background {
     position: relative;
     overflow: hidden; /* Coupe le contenu qui dépasse */
-    height: 300px; /* Ajuste selon la hauteur de l'élément */
+    min-height: 320px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
+    padding-top: 50px; /* Espace pour centrer le contenu verticalement */
 }
 
 .svg-background {
@@ -121,18 +122,19 @@ header {
     z-index: -1; /* Met l'image en arrière-plan */
 }
 
-/* Padding to push the header below the navbar */
-
-
+/* Styles pour le texte et autres éléments */
 header h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 2.5em;
     font-weight: 700;
+    color: var(--white);
 }
 
 header p {
     font-size: 1.2em;
+    color: var(--white);
 }
+
 
 .btn-light-blue {
     background-color: var(--light-blue);
