@@ -137,7 +137,7 @@ header p {
 /* Fin de header prompt box style chat gpt. Style de l'encart */
 .prompt-box {
     width: 100%;
-    max-width: 600px; /* Ajuste la largeur */
+    max-width: 600px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -147,14 +147,29 @@ header p {
     color: #333;
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 15px;
 }
 
-/*   texte qui s'affiche progressivement */
+/* Style de l'encart de réponse */
+.response-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #e8f4fc;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    display: none; /* Cacher la réponse au début */
+}
+
+/* Texte du prompt avec effet d'écriture */
 #prompt-text {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid rgba(0, 0, 0, 0.75); /* Curseur clignotant */
+    border-right: 3px solid rgba(0, 0, 0, 0.75);
     animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
