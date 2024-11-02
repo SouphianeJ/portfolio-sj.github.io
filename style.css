@@ -12,6 +12,16 @@
     --light-gray: #F2F4F6;
     --sage-green: #00C49A;
     --white: #FFFFFF;
+    --light-corail: #EC6A84;
+    --dark-corail: #A65C6B;
+    --light-beige: #FBF8F6;
+    --beige: #F3EBE5;
+    --light-green: #C7DDDB;
+    --green: #B5CECC;
+    --light-gblue: #C7D0DD;
+    --gblue: #C6CFDC;
+    
+    
 }
 
 /* Global Styles */
@@ -95,6 +105,22 @@ header {
     color: var(--white);
     margin-top: 70px; /* Adjust this value based on navbar height */
 }
+
+.header-background {
+    position: relative;
+    overflow: hidden; /* Coupe le contenu qui dépasse */
+    height: 300px; /* Ajuste selon la hauteur de l'élément */
+}
+
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Met l'image en arrière-plan */
+}
+
 /* Padding to push the header below the navbar */
 
 
