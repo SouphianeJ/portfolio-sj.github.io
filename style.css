@@ -134,6 +134,41 @@ header p {
     font-size: 1.2em;
     color: var(--white);
 }
+/* Fin de header prompt box style chat gpt. Style de l'encart */
+.prompt-box {
+    width: 100%;
+    max-width: 600px; /* Ajuste la largeur */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*   texte qui s'affiche progressivement */
+#prompt-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(0, 0, 0, 0.75); /* Curseur clignotant */
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Animation d'écriture */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Animation du curseur clignotant */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgba(0, 0, 0, 0.75); }
+}
 
 
 .btn-light-blue {
