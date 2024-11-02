@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function showResponse() {
         responseBox.style.display = "block";
         responseElement.textContent = responseText;
+        behavior: "smooth"
     }
 
     typeWriter();
