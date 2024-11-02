@@ -170,7 +170,7 @@ header p {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid rgba(0, 0, 0, 0.75);
-    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
 /* Animation d'écriture */
