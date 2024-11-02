@@ -20,7 +20,10 @@
     --green: #B5CECC;
     --light-gblue: #C7D0DD;
     --gblue: #C6CFDC;
-    
+
+    --primary: #0A2540;
+    --second-light: #FBF8F6;
+    --second-deep: #F3EBE5;
     
 }
 
@@ -28,14 +31,14 @@
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    color: var(--dark-blue);
-    background-color: var(--light-gray);
+    color: var(--primary);
+    background-color: var(--secondary-light);
 }
 
 /* Header */
 /* Sticky Header */
 .navbar {
-    background-color: var(--dark-blue);
+    background-color: var(--primary);
     transition: all 0.3s ease;
 }
 
@@ -86,7 +89,7 @@ body {
 
 .scrolling-icons i {
   font-size: 2rem;
-  color: #007bff;
+  color: --secondary-deep;
 }
 
 /* Animation de défilement */
@@ -101,7 +104,7 @@ body {
 
 /*header*/
 header {
-    /*background-color: var(--dark-blue);*/
+    background-color: var(--secondary-deep);
     color: var(--white);
     margin-top: 70px; /* Adjust this value based on navbar height */
 }
@@ -111,6 +114,7 @@ header {
     overflow: hidden; /* Coupe le contenu qui dépasse */
     min-height: 320px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
     padding-top: 50px; /* Espace pour centrer le contenu verticalement */
+    z-index: -1;
 }
 
 .svg-background {
