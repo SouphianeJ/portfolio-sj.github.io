@@ -159,12 +159,12 @@ header p {
     width: 100%;
     max-width: 600px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var (--primary);
     border-radius: 8px;
-    background-color: #e8f4fc;
+    background-color: var (--secondary-light);
     font-family: Arial, sans-serif;
     font-size: 1.2em;
-    color: #333;
+    color: var (--primary);
     display: none; /* Cacher la réponse au début */
 }
 
@@ -191,7 +191,7 @@ header p {
 
 
 .btn-light-blue {
-    background-color: var(--light-blue);
+    background-color: var(--secondary-deep);
     color: var(--white);
     padding: 10px 20px;
     border-radius: 20px;
