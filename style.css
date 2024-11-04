@@ -97,7 +97,7 @@ body {
 
 .scrolling-icons {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   animation: scroll 15s linear infinite;
 }
 
@@ -132,14 +132,6 @@ header {
 }
 
 
-.decorativeheader-background {
-    position: relative;
-    overflow: hidden; /* Coupe le contenu qui dépasse */
-    min-height: 120px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
-    padding-top: 5px; /* Espace pour centrer le contenu verticalement */
-    z-index: -1;
-}
-
 .svg-background {
     position: absolute;
     top: 0;
@@ -163,6 +155,16 @@ header p {
     color: var(--primary);
 }
 /* Fin de header prompt box style chat gpt. Style de l'encart */
+/* Conteneur pour centrer les boîtes */
+.container {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    min-height: 100vh; /* Prend toute la hauteur de la page */
+}
+
+/* Styles de la boîte de prompt */
 .prompt-box {
     width: 100%;
     max-width: 600px;
@@ -178,8 +180,7 @@ header p {
     margin-bottom: 10px;
 }
 
-
-/* Style de l'encart de réponse */
+/* Styles de la boîte de réponse */
 .response-box {
     width: 100%;
     max-width: 600px;
