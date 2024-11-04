@@ -161,7 +161,7 @@ header p {
     flex-direction: column; /* Empile les éléments verticalement */
     align-items: center; /* Centre horizontalement */
     justify-content: center; /* Centre verticalement */
-    min-height: 100vh; /* Prend toute la hauteur de la page */
+   /* min-height: 100vh; *//* Prend toute la hauteur de la page */
 }
 
 /* Styles de la boîte de prompt */
