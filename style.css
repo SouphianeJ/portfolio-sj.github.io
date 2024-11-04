@@ -120,7 +120,7 @@ body {
 header {
     background-color: var(--secondary-light);
     color: var(--primary);
-    margin-top: 70px; /* Adjust this value based on navbar height */
+    /*margin-top: 70px;*/ /* Adjust this value based on navbar height */
 }
 
 .header-background {
@@ -128,6 +128,20 @@ header {
     overflow: hidden; /* Coupe le contenu qui dépasse */
     min-height: 320px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
     padding-top: 50px; /* Espace pour centrer le contenu verticalement */
+    z-index: -1;
+}
+
+decorativeheader {
+    background-color: var(--secondary-light);
+    color: var(--primary);
+    /*margin-top: 70px;*/ /* Adjust this value based on navbar height */
+}
+
+.decorativeheader-background {
+    position: relative;
+    overflow: hidden; /* Coupe le contenu qui dépasse */
+    min-height: 120px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
+    padding-top: 5px; /* Espace pour centrer le contenu verticalement */
     z-index: -1;
 }
 
