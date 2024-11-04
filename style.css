@@ -4,13 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Pacifico&family=IBM+Plex+Mono:wght@700&display=swap');
+
 
 .dev-font {
     font-family: 'Fira Code', monospace; /* Style développeur */
 }
 .handwritten-font {
     font-family: 'Pacifico', cursive; /* Style manuscrit */
+}
+.ibmplex-font {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 1.5em; 
 }
 
 /* Color Variables */
@@ -215,10 +221,29 @@ header p {
 }
 
 /* About Section */
-#about img {
+/*#about img {
     border: 5px solid var(--light-gray);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}*/
+
+.profile-image {
+    padding: 5px;
+    background: linear-gradient(135deg, #c7dddb, #b5cecc); /* Dégradé autour du cercle */
+    border-radius: 50%; /* Assure un contour rond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
+
+.profile-image img {
+    border-radius: 50%; /* Maintien du cercle pour l'image */
+    padding: 5px;
+    background-color: #ffffff; /* Fond blanc pour l'image */
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
 
 /* Section Titles */
 h2 {
