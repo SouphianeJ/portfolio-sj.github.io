@@ -83,8 +83,8 @@ body {
 
 .scrolling-icons {
   display: flex;
-  gap: 20px;
-  animation: scroll 10s linear infinite;
+  gap: 50px;
+  animation: scroll 15s linear infinite;
 }
 
 .scrolling-icons i {
