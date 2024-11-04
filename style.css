@@ -145,7 +145,7 @@ header p {
     padding: 10px;
     border: 1px solid var(--secondary-deep);
     border-radius: 8px;
-    background-color: var(--secondary-light);
+    background-color: var(--light-gray);
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     color: var(--primary);
@@ -161,7 +161,7 @@ header p {
     padding: 10px;
     border: 1px solid #0A2540;
     border-radius: 8px;
-    background-color: var(--secondary-light);
+    background-color: var(--light-gray);
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     color: var(--primary);
