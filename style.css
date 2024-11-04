@@ -120,7 +120,7 @@ body {
 header {
     background-color: var(--secondary-light);
     color: var(--primary);
-    /*margin-top: 70px;*/ /* Adjust this value based on navbar height */
+    margin-top: 70px;/* Adjust this value based on navbar height */
 }
 
 .header-background {
