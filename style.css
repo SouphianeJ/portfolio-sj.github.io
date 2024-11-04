@@ -148,7 +148,7 @@ header p {
     background-color: var(--secondary-light);
     font-family: Arial, sans-serif;
     font-size: 1.2em;
-    color: #333;
+    color: var(--primary);
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 10px;
