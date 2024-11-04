@@ -179,8 +179,8 @@ header p {
 
 /* Animation d'écriture */
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100vw; }
+   /* from { width: 0; }
+    to { width: 100%; }*/
 }
 
 /* Animation du curseur clignotant */
