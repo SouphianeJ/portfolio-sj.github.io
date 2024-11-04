@@ -202,8 +202,8 @@ header p {
 
 
 .btn-cv {
-    background-color: var(--secondary-deep);
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary-light);
     padding: 10px 20px;
     border-radius: 20px;
     transition: background-color 0.3s ease;
@@ -211,7 +211,7 @@ header p {
 }
 
 .btn-cv:hover {
-    background-color: var(--primary);
+    background-color: var(--secondary-deep);
 }
 
 /* About Section */
