@@ -104,7 +104,7 @@ body {
 
 /*header*/
 header {
-    background-color: var(--secondary-deep);
+    background-color: var(--secondary-light);
     color: var(--primary);
     margin-top: 70px; /* Adjust this value based on navbar height */
 }
@@ -143,9 +143,9 @@ header p {
     width: 100%;
     max-width: 500px;
     padding: 10px;
-    border: 1px solid var (--secondary-deep);
+    border: 1px solid var(--secondary-deep);
     border-radius: 8px;
-    background-color: var (--secondary-light);
+    background-color: var(--secondary-light);
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     color: #333;
@@ -161,10 +161,10 @@ header p {
     padding: 10px;
     border: 1px solid #0A2540;
     border-radius: 8px;
-    background-color: var (--secondary-light);
+    background-color: var(--secondary-light);
     font-family: Arial, sans-serif;
     font-size: 1.2em;
-    color: var (--primary);
+    color: var(--primary);
     display: none; /* Cacher la réponse au début */
 }
 
@@ -191,16 +191,16 @@ header p {
 }
 
 
-.btn-light-blue {
+.btn-cv {
     background-color: var(--secondary-deep);
-    color: var(--white);
+    color: var(--primary);
     padding: 10px 20px;
     border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 
-.btn-light-blue:hover {
-    background-color: var(--sage-green);
+.btn-cv:hover {
+    background-color: var(--primary);
 }
 
 /* About Section */
@@ -213,7 +213,7 @@ header p {
 h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
-    color: var(--dark-blue);
+    color: var(--primary);
     margin-bottom: 20px;
     text-align: center;
 }
@@ -231,7 +231,7 @@ h2 {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: var(--light-blue);
+    background: var(--secondary-deep);
 }
 
 .timeline {
@@ -256,13 +256,13 @@ h2 {
 }
 
 .timeline-item p {
-    color: var(--dark-blue);
+    color: var(--primary);
 }
 
 /* Skills Section */
 #skills h3 {
     font-size: 1.5em;
-    color: var(--light-blue);
+    color: var(--secondary-deep);
 }
 
 #skills p {
@@ -271,7 +271,7 @@ h2 {
 
 /* Project Cards */
 #projects .card {
-    background-color: var(--white);
+    background-color: var(--light-green);
     border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -293,12 +293,12 @@ h2 {
 /* Contact Form */
 #contact .form-control {
     border-radius: 10px;
-    border: 1px solid var(--light-blue);
+    border: 1px solid var(--secondary-deep);
 }
 
 #contact button {
-    background-color: var(--light-blue);
-    color: var(--white);
+    background-color: var(--secondary-deep);
+    color: var(--primary);
     border-radius: 20px;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
