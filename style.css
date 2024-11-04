@@ -131,11 +131,6 @@ header {
     z-index: -1;
 }
 
-decorativeheader {
-    background-color: var(--secondary-light);
-    color: var(--primary);
-    /*margin-top: 70px;*/ /* Adjust this value based on navbar height */
-}
 
 .decorativeheader-background {
     position: relative;
