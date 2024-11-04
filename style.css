@@ -166,7 +166,7 @@ header p {
     width: 100%;
     max-width: 600px;
     padding: 10px;
-    border: 1px solid var(--secondary-deep);
+    border: 1px solid var(--light-gblue);
     border-radius: 8px;
     background-color: var(--light-gray);
     font-family: Arial, sans-serif;
@@ -183,7 +183,7 @@ header p {
     width: 100%;
     max-width: 600px;
     padding: 10px;
-    border: 1px solid #0A2540;
+    border: 1px solid var(--light-gblue);
     border-radius: 8px;
     background-color: var(--light-gray);
     font-family: Arial, sans-serif;
@@ -221,6 +221,7 @@ header p {
     padding: 10px 20px;
     border-radius: 20px;
     transition: background-color 0.3s ease;
+    zindex: 1;
 }
 
 .btn-cv:hover {
@@ -286,7 +287,7 @@ h2 {
 /* Skills Section */
 #skills h3 {
     font-size: 1.5em;
-    color: var(--secondary-deep);
+    color: var(--dark-corail);
 }
 
 #skills p {
