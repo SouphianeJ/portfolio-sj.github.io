@@ -121,7 +121,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     
 }
@@ -131,12 +131,12 @@ header h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 2.5em;
     font-weight: 700;
-    color: var(--white);
+    color: var(--primary);
 }
 
 header p {
     font-size: 1.2em;
-    color: var(--white);
+    color: var(--primary);
 }
 /* Fin de header prompt box style chat gpt. Style de l'encart */
 .prompt-box {
@@ -180,7 +180,7 @@ header p {
 /* Animation d'écriture */
 @keyframes typing {
     from { width: 0; }
-    to { width: 100%; }
+    to { width: 100vw; }
 }
 
 /* Animation du curseur clignotant */
