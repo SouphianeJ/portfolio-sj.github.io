@@ -126,7 +126,7 @@ header {
 .header-background {
     position: relative;
     overflow: hidden; /* Coupe le contenu qui dépasse */
-    min-height: 320px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
+    min-height: 220px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
     padding-top: 50px; /* Espace pour centrer le contenu verticalement */
     /*z-index: -1;*/
 }
@@ -244,7 +244,7 @@ header p {
     padding: 5px;
     background: var(--primary); /* Dégradé autour du cercle */
     border-radius: 50%; /* Assure un contour rond */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -255,7 +255,7 @@ header p {
 }
 
 .profile-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 
