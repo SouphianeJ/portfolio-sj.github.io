@@ -166,7 +166,7 @@ header p {
 
 /* Styles de la boîte de prompt */
 .prompt-box {
-    width: 100%;
+    width: 100vw;
     max-width: 600px;
     padding: 10px;
     border: 1px solid var(--light-gblue);
