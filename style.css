@@ -128,7 +128,7 @@ header {
     overflow: hidden; /* Coupe le contenu qui dépasse */
     min-height: 320px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
     padding-top: 50px; /* Espace pour centrer le contenu verticalement */
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 
@@ -242,7 +242,7 @@ header p {
 
 .profile-image {
     padding: 5px;
-    background: linear-gradient(135deg, #c7dddb, #b5cecc); /* Dégradé autour du cercle */
+    background: var(--primary); /* Dégradé autour du cercle */
     border-radius: 50%; /* Assure un contour rond */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
