@@ -111,13 +111,13 @@ body {
 /* Animation for alternating scroll */
 @keyframes scroll-alternate {
   0% {
-    transform: translateX(100%);
+    transform: translateX(75%);
   }
   50% {
-    transform: translateX(-50%);
+    transform: translateX(-75%);
   }
   100% {
-    transform: translateX(50%);
+    transform: translateX(75%);
   }
 }
 
@@ -272,6 +272,7 @@ h2 {
     color: var(--primary);
     margin-bottom: 20px;
     text-align: center;
+    font-weight: 600;
 }
 
 /* Timeline for Experience Section */
