@@ -98,7 +98,7 @@ body {
 /* Scrolling icons with alternating direction */
 .scrolling-icons {
   display: flex;
-  gap: 80px;
+  gap: 60px;
   animation: scroll-alternate 9s ease-in-out infinite;
 }
 
