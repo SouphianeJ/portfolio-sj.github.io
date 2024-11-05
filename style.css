@@ -93,12 +93,14 @@ body {
 .scrolling-icons-container {
   overflow: hidden;
   width: 100%;
+  z-index: -1;
 }
 
 .scrolling-icons {
   display: flex;
   gap: 90px;
   animation: scroll 15s linear infinite;
+  
 }
 
 .scrolling-icons i {
