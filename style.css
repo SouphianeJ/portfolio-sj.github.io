@@ -97,7 +97,7 @@ body {
 
 .scrolling-icons {
   display: flex;
-  gap: 70px;
+  gap: 90px;
   animation: scroll 15s linear infinite;
 }
 
@@ -178,11 +178,13 @@ header p {
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 /* Styles de la boîte de réponse */
 .response-box {
-    width: 100%;
+    width: 100vw;
     max-width: 600px;
     padding: 10px;
     border: 1px solid var(--light-gblue);
@@ -191,6 +193,8 @@ header p {
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     color: var(--primary);
+    margin-left: 1px;
+    margin-right: 1px;
     display: none; /* Cacher la réponse au début */
 }
 
