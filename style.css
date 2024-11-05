@@ -37,7 +37,7 @@
 
     --primary: #0A2540;
     --secondary-light: #FBF8F6;
-    --secondary-deep: #F3EBE5;
+    --secondary-deep: #E1D5CC;
     
 }
 
@@ -248,7 +248,7 @@ header p {
 
 .profile-image {
     padding: 5px;
-    background: var(--primary); /* Dégradé autour du cercle */
+    background: var(--secondary-deep); /* Dégradé autour du cercle */
     border-radius: 50%; /* Assure un contour rond */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
