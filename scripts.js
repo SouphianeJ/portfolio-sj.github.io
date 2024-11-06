@@ -30,9 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
             promptElement.innerHTML += promptText.charAt(index);
             index++;
             setTimeout(typeWriter, 125);
+            setTimeout(showLoadingDots, 1500);
         } else {
             // Show the loading dots for 1.5 seconds after prompt text is fully written
-            setTimeout(showLoadingDots, 1500);
+            //setTimeout(showLoadingDots, 1500);
         }
     }
 
