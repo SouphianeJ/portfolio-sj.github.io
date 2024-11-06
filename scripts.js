@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(showLoadingDots, 1500);
         } else {
             // Show the loading dots for 1.5 seconds after prompt text is fully written
-            //setTimeout(showLoadingDots, 1500);
+            setTimeout(showResponse, 1500);
         }
     }
 
