@@ -87,6 +87,27 @@ body {
     .navbar .nav-link i {
         margin-right: 5px;
     }
+
+
+        /* Scrolling icons MOBILE */
+    .scrolling-icons {
+      display: flex;
+      gap: 50px;
+      animation: scroll-alternate 7s ease-in-out infinite;
+    }
+    
+    /* Animation for alternating scroll MOBILE*/
+    @keyframes scroll-alternate {
+      0% {
+        transform: translateX(100%);
+      }
+      50% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
 }
 
 /* Scrolling icons container */
@@ -99,7 +120,7 @@ body {
 .scrolling-icons {
   display: flex;
   gap: 60px;
-  animation: scroll-alternate 9s ease-in-out infinite;
+  animation: scroll-alternate 12s ease-in-out infinite;
 }
 
 /* Style for the icons */
@@ -239,12 +260,6 @@ header p {
 .btn-cv:hover {
     background-color: var(--secondary-deep);
 }
-
-/* About Section */
-/*#about img {
-    border: 5px solid var(--light-gray);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}*/
 
 .profile-image {
     padding: 5px;
