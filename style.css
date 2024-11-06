@@ -93,7 +93,7 @@ body {
     .scrolling-icons {
       display: flex;
       gap: 50px;
-      animation: scroll-alternate 7s ease-in-out infinite;
+      animation: scroll-alternate 6s ease-in-out infinite;
     }
     
     /* Animation for alternating scroll MOBILE*/
@@ -119,8 +119,8 @@ body {
 /* Scrolling icons with alternating direction */
 .scrolling-icons {
   display: flex;
-  gap: 60px;
-  animation: scroll-alternate 12s ease-in-out infinite;
+  gap: 50px;
+  animation: scroll-alternate 13s ease-in-out infinite;
 }
 
 /* Style for the icons */
@@ -132,13 +132,13 @@ body {
 /* Animation for alternating scroll */
 @keyframes scroll-alternate {
   0% {
-    transform: translateX(75%);
+    transform: translateX(60%);
   }
   50% {
-    transform: translateX(-75%);
+    transform: translateX(-60%);
   }
   100% {
-    transform: translateX(75%);
+    transform: translateX(60%);
   }
 }
 
