@@ -29,9 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
             promptElement.innerHTML += promptText.charAt(index);
             index++;
             setTimeout(typeWriter, 125);
+            loadingDots.style.display = "inline-block";
         } else {
             // Affiche la réponse une seconde après la fin de l'écriture du prompt
+            loadingDots.style.display = "none";
             setTimeout(showResponse, 1500);
+            
         }
     }
 
