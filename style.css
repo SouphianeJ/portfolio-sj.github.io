@@ -153,7 +153,7 @@ header {
 .header-background {
     position: relative;
     overflow: hidden; /* Coupe le contenu qui dépasse */
-    min-height: 220px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
+    min-height: 150px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
     padding-top: 50px; /* Espace pour centrer le contenu verticalement */
     /*z-index: -1;*/
 }
