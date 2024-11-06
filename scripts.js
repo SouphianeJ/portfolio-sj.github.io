@@ -30,16 +30,20 @@ document.addEventListener("DOMContentLoaded", function() {
             promptElement.innerHTML += promptText.charAt(index);
             index++;
             setTimeout(typeWriter, 125);
-            setTimeout(showLoadingDots, 1500);
+            setTimeout(showLoadingDots, 125);
         } else {
-            // Show the loading dots for 1.5 seconds after prompt text is fully written
-            setTimeout(showResponse, 1500);
+            // Show the response
+            setTimeout(showResponseElement, 1000);
         }
     }
 
     function showLoadingDots() {
         responseBox.style.display = "block";
         loadingDots.style.display = "inline-block"; // Show loading dots
+            
+    }
+
+    function showResponseElement() {
 
         // Hide the loading dots after 1.5 seconds and show the response
         setTimeout(function() {
