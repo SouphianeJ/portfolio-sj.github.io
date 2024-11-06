@@ -183,7 +183,7 @@ header p {
 }
 /* Fin de header prompt box style chat gpt. Style de l'encart */
 /* Conteneur pour centrer les boîtes */
-.container {
+.prompt-container {
     display: flex;
     flex-direction: column; /* Empile les éléments verticalement */
     align-items: center; /* Centre horizontalement */
@@ -192,7 +192,7 @@ header p {
 }
 
 /* Styles de la boîte de prompt */
-.prompt-box {
+.prompt-container .prompt-box {
     width: 100vw;
     max-width: 600px;
     padding: 10px;
@@ -209,8 +209,8 @@ header p {
     margin-right: 1px;
 }
 
-/* Styles de la boîte de réponse */
-.response-box {
+/* Styles de la boîte de réponse dans .prompt-container */
+.prompt-container .response-box {
     width: 100vw;
     max-width: 600px;
     padding: 10px;
@@ -225,13 +225,44 @@ header p {
     display: none; /* Cacher la réponse au début */
 }
 
-/* Texte du prompt avec effet d'écriture */
-#prompt-text {
+/* Texte du prompt avec effet d'écriture dans .prompt-container */
+.prompt-container #prompt-text {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid rgba(0, 0, 0, 0.75);
     animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Animation des trois petits points dans .prompt-container */
+.prompt-container #loading-dots {
+    display: inline-block;
+    font-size: 1.2em;
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+.prompt-container #loading-dots::after {
+    content: "";
+    animation: ellipsis 1.5s infinite;
+}
+
+@keyframes ellipsis {
+    0% {
+        content: "";
+    }
+    25% {
+        content: ".";
+    }
+    50% {
+        content: "..";
+    }
+    75% {
+        content: "...";
+    }
+    100% {
+        content: "";
+    }
 }
 
 /* Animation d'écriture */
