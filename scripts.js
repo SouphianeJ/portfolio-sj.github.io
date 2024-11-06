@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const promptElement = document.getElementById("prompt-text");
     const responseElement = document.getElementById("response-text");
     const responseBox = document.getElementById("response-box");
+    const loadingDots = document.getElementById("loading-dots");
     let index = 0;
 
     function typeWriter() {
@@ -29,19 +30,22 @@ document.addEventListener("DOMContentLoaded", function() {
             promptElement.innerHTML += promptText.charAt(index);
             index++;
             setTimeout(typeWriter, 125);
-            loadingDots.style.display = "inline-block";
         } else {
-            // Affiche la réponse une seconde après la fin de l'écriture du prompt
-            loadingDots.style.display = "none";
-            setTimeout(showResponse, 1500);
-            
+            // Show the loading dots for 1.5 seconds after prompt text is fully written
+            setTimeout(showLoadingDots, 1500);
         }
     }
 
-    function showResponse() {
+    function showLoadingDots() {
         responseBox.style.display = "block";
-        responseElement.textContent = responseText;
-        behavior: "smooth"
+        loadingDots.style.display = "inline-block"; // Show loading dots
+
+        // Hide the loading dots after 1.5 seconds and show the response
+        setTimeout(function() {
+            loadingDots.style.display = "none"; // Hide loading dots
+            responseElement.style.display = "inline-block"; // Show the response text
+            responseElement.textContent = responseText;
+        }, 1500);
     }
 
     typeWriter();
