@@ -11,12 +11,13 @@
 .dev-font {
     font-family: 'Fira Code', monospace; /* Style développeur */
 }
-/*.handwritten-font {
+h1 .handwritten-font {
     font-family: 'Pacifico', cursive; /* Style manuscrit */
-}*/
-.handwritten-font {
-    font-family: 'Dancing Script', cursive; /* Style manuscrit */
 }
+/*
+.handwritten-font {
+    font-family: 'Dancing Script', cursive;  
+}*/
 
 .ibmplex-font {
     font-family: 'IBM Plex Mono', monospace;
