@@ -82,8 +82,39 @@ body {
     color: var(--white);
 }
 
+
+@keyframes scroll-alternate-large {
+    0% {
+        transform: translateX(60%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: translateX(60%);
+    }
+}
+
+@keyframes scroll-alternate-small {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.scrolling-icons {
+    display: flex;
+    gap: 50px;
+    animation: scroll-alternate-large 13s ease-in-out infinite;
+}
+
 @media (max-width: 768px) {
-    .navbar .nav-link {
+     .navbar .nav-link {
         font-size: 0.9em;
         display: inline-flex;
         align-items: center;
@@ -92,28 +123,12 @@ body {
     .navbar .nav-link i {
         margin-right: 5px;
     }
-
-
-        /* Scrolling icons MOBILE */
     .scrolling-icons {
-      display: flex;
-      gap: 50px;
-      animation: scroll-alternate 6s ease-in-out infinite;
-    }
-    
-    /* Animation for alternating scroll MOBILE*/
-    @keyframes scroll-alternate {
-      0% {
-        transform: translateX(100%);
-      }
-      50% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(100%);
-      }
+        animation: scroll-alternate-small 6s ease-in-out infinite;
     }
 }
+
+
 
 /* Scrolling icons container */
 .scrolling-icons-container {
@@ -121,30 +136,11 @@ body {
   width: 100%;
 }
 
-/* Scrolling icons with alternating direction */
-.scrolling-icons {
-  display: flex;
-  gap: 50px;
-  animation: scroll-alternate 13s ease-in-out infinite;
-}
 
 /* Style for the icons */
 .scrolling-icons i {
   font-size: 2rem;
   color: var(--secondary-deep);
-}
-
-/* Animation for alternating scroll */
-@keyframes scroll-alternate {
-  0% {
-    transform: translateX(60%);
-  }
-  50% {
-    transform: translateX(-60%);
-  }
-  100% {
-    transform: translateX(60%);
-  }
 }
 
 
