@@ -12,8 +12,11 @@
     font-family: 'Fira Code', monospace; /* Style développeur */
 }
 h1 .handwritten-font {
-    font-family: 'Pacifico', cursive; /* Style manuscrit */
+    font-family: 'Pacifico', cursive; 
+    font-weight: 400;
+    font-style: normal;
 }
+
 /*
 .handwritten-font {
     font-family: 'Dancing Script', cursive;  
