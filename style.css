@@ -4,15 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Pacifico&family=IBM+Plex+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Pacifico&family=IBM+Plex+Mono:wght@700&family=Dancing+Script&display=swap');
+
 
 
 .dev-font {
     font-family: 'Fira Code', monospace; /* Style développeur */
 }
-.handwritten-font {
+/*.handwritten-font {
     font-family: 'Pacifico', cursive; /* Style manuscrit */
+}*/
+.handwritten-font {
+    font-family: 'Dancing Script', cursive; /* Style manuscrit */
 }
+
 .ibmplex-font {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
