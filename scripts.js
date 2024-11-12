@@ -73,6 +73,14 @@ function openModal(modalId) {
     $('#' + modalId).modal('show');
 }
 
+// Obtenir les couleurs à partir des variables CSS
+const rootStyles = getComputedStyle(document.documentElement);
+const backgroundColorDefault = rootStyles.getPropertyValue("--background-color-default").trim();
+const textColorDefault = rootStyles.getPropertyValue("--text-color-default").trim();
+const backgroundColorDark = rootStyles.getPropertyValue("--background-color-dark").trim();
+const textColorLight = rootStyles.getPropertyValue("--text-color-light").trim();
+
+
 // Variables pour le contexte du canvas et les particules
 const canvas = document.getElementById("particleCanvas");
 const ctx = canvas.getContext("2d");
@@ -132,6 +140,7 @@ function animateParticles() {
   animationFrame = requestAnimationFrame(animateParticles);
 }
 
+
 // Gère le scroll pour appliquer les effets de changement de couleur et d'activation des particules
 window.onscroll = function() {
   const specialSection = document.getElementById("special-section");
@@ -150,8 +159,8 @@ window.onscroll = function() {
       let scrollPercent = Math.min(Math.max(scrollPositionInSection / sectionHeight, 0), 1);
 
       // Applique l'effet de fond sombre et texte clair
-      document.body.style.backgroundColor = `rgba(0, 0, 0, ${1 - scrollPercent})`;
-      document.body.style.color = `rgba(255, 255, 255, ${scrollPercent})`;
+      document.body.style.backgroundColor = `rgba(${hexToRgb(backgroundColorDark)}, ${1 - scrollPercent})`;
+      document.body.style.color = `rgba(${hexToRgb(textColorLight)}, ${scrollPercent})`;
 
       // Démarre l'animation des particules si elle n'est pas déjà en cours
       if (!animationFrame) {
@@ -167,15 +176,24 @@ window.onscroll = function() {
   }
 };
 
-// Fonction pour réinitialiser les styles au par défaut
+
+// Fonction de conversion HEX en RGB pour utiliser rgba avec les couleurs CSS
+function hexToRgb(hex) {
+  let bigint = parseInt(hex.replace("#", ""), 16);
+  let r = (bigint >> 16) & 255;
+  let g = (bigint >> 8) & 255;
+  let b = bigint & 255;
+  return `${r}, ${g}, ${b}`;
+}
+
+// Fonction pour réinitialiser les styles
 function resetStyles() {
-  document.body.style.backgroundColor = "white";
-  document.body.style.color = "black";
+  document.body.style.backgroundColor = backgroundColorDefault;
+  document.body.style.color = textColorDefault;
   cancelAnimationFrame(animationFrame);
   animationFrame = null;
   ctx.clearRect(0, 0, canvas.width, canvas.height); // Efface les particules
 }
-
 // Initialiser quelques particules au démarrage
 addParticles();
 
