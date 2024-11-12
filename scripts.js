@@ -101,7 +101,7 @@ function createParticle() {
 
 // Ajoute des particules au tableau
 function addParticles() {
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 10; i++) {
     particles.push(createParticle());
   }
 }
@@ -139,11 +139,15 @@ window.onscroll = function() {
   if (specialSection) {
     const rect = specialSection.getBoundingClientRect();
 
-    // Vérifie si on est dans la section spéciale
-    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-      let sectionHeight = specialSection.offsetHeight;
-      let scrollPositionInSection = window.scrollY - specialSection.offsetTop;
-      let scrollPercent = scrollPositionInSection / sectionHeight;
+    // Définir un offset au début et à la fin de la section
+    const offsetStart = 100; // Décalage au début (en pixels)
+    const offsetEnd = 100;   // Décalage à la fin (en pixels)
+
+    // Vérifie si on est dans la zone cible avec offset
+    if (rect.top <= window.innerHeight - offsetStart && rect.bottom >= offsetEnd) {
+      let sectionHeight = specialSection.offsetHeight - offsetStart - offsetEnd;
+      let scrollPositionInSection = window.scrollY - specialSection.offsetTop - offsetStart;
+      let scrollPercent = Math.min(Math.max(scrollPositionInSection / sectionHeight, 0), 1);
 
       // Applique l'effet de fond sombre et texte clair
       document.body.style.backgroundColor = `rgba(0, 0, 0, ${1 - scrollPercent})`;
