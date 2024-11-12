@@ -75,10 +75,10 @@ function openModal(modalId) {
 
 // Obtenir les couleurs à partir des variables CSS
 const rootStyles = getComputedStyle(document.documentElement);
-const backgroundColorDefault = rootStyles.getPropertyValue("--background-color-default").trim();
-const textColorDefault = rootStyles.getPropertyValue("--text-color-default").trim();
-const backgroundColorDark = rootStyles.getPropertyValue("--background-color-dark").trim();
-const textColorLight = rootStyles.getPropertyValue("--text-color-light").trim();
+const backgroundColorDefault = rootStyles.getPropertyValue("--secondary-light").trim();
+const textColorDefault = rootStyles.getPropertyValue("--primary").trim();
+const backgroundColorDark = rootStyles.getPropertyValue("--primary").trim();
+const textColorLight = rootStyles.getPropertyValue("--secondary-light").trim();
 
 
 // Variables pour le contexte du canvas et les particules
