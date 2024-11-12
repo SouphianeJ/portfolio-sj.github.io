@@ -159,9 +159,10 @@ window.onscroll = function() {
       let scrollPercent = Math.min(Math.max(scrollPositionInSection / sectionHeight, 0), 1);
 
       // Applique l'effet de fond sombre et texte clair
-      document.body.style.backgroundColor = `rgba(${hexToRgb(backgroundColorDark)}, ${1 - scrollPercent})`;
-      document.body.style.color = `rgba(${hexToRgb(textColorLight)}, ${scrollPercent})`;
-
+      document.body.style.backgroundColor = `rgba(${hexToRgb(backgroundColorDark)})`;
+      document.body.style.color = `rgb(${hexToRgb(textColorLight)})`;
+//document.body.style.backgroundColor = `rgba(${hexToRgb(backgroundColorDark)}, ${1 - scrollPercent})`;
+   //   document.body.style.color = `rgba(${hexToRgb(textColorLight)}, ${scrollPercent})`;
       // Démarre l'animation des particules si elle n'est pas déjà en cours
       if (!animationFrame) {
         animateParticles();
