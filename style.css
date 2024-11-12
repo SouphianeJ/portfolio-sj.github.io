@@ -443,7 +443,7 @@ footer a:hover {
 
 .special-section {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   background-color: var(--primary);
   color: var(--secondary-light);
   overflow: hidden;
