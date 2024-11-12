@@ -149,8 +149,8 @@ window.onscroll = function() {
     const rect = specialSection.getBoundingClientRect();
 
     // Définir un offset au début et à la fin de la section
-    const offsetStart = 100; // Décalage au début (en pixels)
-    const offsetEnd = 100;   // Décalage à la fin (en pixels)
+    const offsetStart = 200; // Décalage au début (en pixels)
+    const offsetEnd = 200;   // Décalage à la fin (en pixels)
 
     // Vérifie si on est dans la zone cible avec offset
     if (rect.top <= window.innerHeight - offsetStart && rect.bottom >= offsetEnd) {
