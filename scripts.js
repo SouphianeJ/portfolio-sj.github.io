@@ -72,3 +72,106 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function openModal(modalId) {
     $('#' + modalId).modal('show');
 }
+
+// Variables pour le contexte du canvas et les particules
+const canvas = document.getElementById("particleCanvas");
+const ctx = canvas.getContext("2d");
+const particles = [];
+let animationFrame;
+
+// Redimensionne le canvas pour remplir toute la section
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+// Fonction pour créer une particule
+function createParticle() {
+  return {
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    speedX: (Math.random() - 0.5) * 2,
+    speedY: Math.random() * -2 - 1,
+    size: Math.random() * 2 + 1,
+    opacity: Math.random()
+  };
+}
+
+// Ajoute des particules au tableau
+function addParticles() {
+  for (let i = 0; i < 5; i++) {
+    particles.push(createParticle());
+  }
+}
+
+// Dessine les particules sur le canvas
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach((particle, index) => {
+    ctx.beginPath();
+    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
+    ctx.fill();
+
+    // Mise à jour de la position de la particule
+    particle.x += particle.speedX;
+    particle.y += particle.speedY;
+
+    // Réinitialise la particule si elle dépasse les limites
+    if (particle.y < 0 || particle.x < 0 || particle.x > canvas.width) {
+      particles[index] = createParticle();
+    }
+  });
+}
+
+// Fonction d'animation pour les particules
+function animateParticles() {
+  drawParticles();
+  animationFrame = requestAnimationFrame(animateParticles);
+}
+
+// Gère le scroll pour appliquer les effets de changement de couleur et d'activation des particules
+window.onscroll = function() {
+  const specialSection = document.getElementById("special-section");
+
+  if (specialSection) {
+    const rect = specialSection.getBoundingClientRect();
+
+    // Vérifie si on est dans la section spéciale
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      let sectionHeight = specialSection.offsetHeight;
+      let scrollPositionInSection = window.scrollY - specialSection.offsetTop;
+      let scrollPercent = scrollPositionInSection / sectionHeight;
+
+      // Applique l'effet de fond sombre et texte clair
+      document.body.style.backgroundColor = `rgba(0, 0, 0, ${1 - scrollPercent})`;
+      document.body.style.color = `rgba(255, 255, 255, ${scrollPercent})`;
+
+      // Démarre l'animation des particules si elle n'est pas déjà en cours
+      if (!animationFrame) {
+        animateParticles();
+      }
+    } else {
+      // Réinitialise le style en dehors de la section spéciale
+      resetStyles();
+    }
+  } else {
+    // Réinitialise le style si la section spéciale n'existe pas
+    resetStyles();
+  }
+};
+
+// Fonction pour réinitialiser les styles au par défaut
+function resetStyles() {
+  document.body.style.backgroundColor = "white";
+  document.body.style.color = "black";
+  cancelAnimationFrame(animationFrame);
+  animationFrame = null;
+  ctx.clearRect(0, 0, canvas.width, canvas.height); // Efface les particules
+}
+
+// Initialiser quelques particules au démarrage
+addParticles();
+
