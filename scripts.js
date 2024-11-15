@@ -79,6 +79,8 @@ const backgroundColorDefault = rootStyles.getPropertyValue("--secondary-light").
 const textColorDefault = rootStyles.getPropertyValue("--primary").trim();
 const backgroundColorDark = rootStyles.getPropertyValue("--primary").trim();
 const textColorLight = rootStyles.getPropertyValue("--secondary-light").trim();
+const cardColorDefault = rootStyles.getPropertyValue("--light-green").trim();
+const cardColorDark = rootStyles.getPropertyValue("--dark-corail").trim();
 
 
 // Variables pour le contexte du canvas et les particules
@@ -142,27 +144,32 @@ function animateParticles() {
 
 
 // Gère le scroll pour appliquer les effets de changement de couleur et d'activation des particules
-window.onscroll = function() {
+window.onscroll = function () {
   const specialSection = document.getElementById("special-section");
 
   if (specialSection) {
     const rect = specialSection.getBoundingClientRect();
 
-    // Définir un offset au début et à la fin de la section
-    const offsetStart = 200; // Décalage au début (en pixels)
-    const offsetEnd = 10;   // Décalage à la fin (en pixels)
+    // Point de déclenchement basé sur la hauteur de la fenêtre
+    const triggerOffset = window.innerHeight / 6; // 1/3 de la hauteur de l'écran
 
-    // Vérifie si on est dans la zone cible avec offset
-    if (rect.top <= window.innerHeight - offsetStart && rect.bottom >= offsetEnd) {
-      let sectionHeight = specialSection.offsetHeight - offsetStart - offsetEnd;
-      let scrollPositionInSection = window.scrollY - specialSection.offsetTop - offsetStart;
-      let scrollPercent = Math.min(Math.max(scrollPositionInSection / sectionHeight, 0), 1);
+    // Vérifie si la section spéciale est proche du centre ou du tiers de l'écran
+    if (
+      rect.top <= window.innerHeight / 2 + triggerOffset &&
+      rect.bottom >= window.innerHeight / 2 //- triggerOffset
+    ) {
+      let sectionHeight = specialSection.offsetHeight - 2 * triggerOffset;
+      let scrollPositionInSection = window.scrollY - specialSection.offsetTop - triggerOffset;
+      let scrollPercent = Math.min(Math.max(scrollPositionInSection / sectionHeight, 0),1);
 
-      // Applique l'effet de fond sombre et texte clair
+      // Applique l'effet de fond sombre et texte clair au body
       document.body.style.backgroundColor = `rgba(${hexToRgb(backgroundColorDark)})`;
       document.body.style.color = `rgb(${hexToRgb(textColorLight)})`;
-//document.body.style.backgroundColor = `rgba(${hexToRgb(backgroundColorDark)}, ${1 - scrollPercent})`;
-   //   document.body.style.color = `rgba(${hexToRgb(textColorLight)}, ${scrollPercent})`;
+      //et aux cards
+      document.querySelectorAll("#projects .card").forEach((card) => {
+        card.style.backgroundColor = cardColorDark;
+      });
+
       // Démarre l'animation des particules si elle n'est pas déjà en cours
       if (!animationFrame) {
         animateParticles();
@@ -176,8 +183,6 @@ window.onscroll = function() {
     resetStyles();
   }
 };
-
-
 // Fonction de conversion HEX en RGB pour utiliser rgba avec les couleurs CSS
 function hexToRgb(hex) {
   let bigint = parseInt(hex.replace("#", ""), 16);
@@ -189,12 +194,19 @@ function hexToRgb(hex) {
 
 // Fonction pour réinitialiser les styles
 function resetStyles() {
+  //reset body color
   document.body.style.backgroundColor = backgroundColorDefault;
   document.body.style.color = textColorDefault;
+  //et reset cards
+  document.querySelectorAll("#projects .card").forEach((card) => {
+    card.style.backgroundColor = cardColorDefault;
+  });
   cancelAnimationFrame(animationFrame);
   animationFrame = null;
   ctx.clearRect(0, 0, canvas.width, canvas.height); // Efface les particules
 }
 // Initialiser quelques particules au démarrage
 addParticles();
+
+// Gère le scroll pour appliquer les effets de changement de couleur et d'activation des particules
 
