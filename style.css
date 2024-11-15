@@ -291,7 +291,7 @@ header p {
     padding: 10px 20px;
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    zindex: 1;
+    
 }
 
 .btn-cv:hover {
@@ -321,7 +321,6 @@ header p {
 h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
-    color: var(--primary);
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
@@ -363,10 +362,17 @@ h2 {
 .timeline-item h3 {
     font-weight: 700;
 }
-
-.timeline-item p {
-    color: var(--primary);
+/* Timeline Item Animation */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
+.timeline-item.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Skills Section */
 #skills h3 {
@@ -383,11 +389,11 @@ h2 {
     background-color: var(--light-green);
     border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.5s, color 0.5s; /* Combine toutes les transitions */
 }
 
 #projects .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.07); /* Combine les transformations dans une seule déclaration */
 }
 
 .modal-content {
@@ -434,18 +440,13 @@ footer a:hover {
     color: var(--sage-green);
 }
 
-/* Timeline Item Animation */
-.timeline-item {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
 
 .special-section {
   position: relative;
   height: 90vh;
   background-color: var(--primary);
   color: var(--secondary-light);
+  max-height: fit-content;
   overflow: hidden;
 }
 
@@ -460,12 +461,4 @@ footer a:hover {
   width: 100%;
   height: 100%;
   pointer-events: none;
-}
-
-
-
-
-.timeline-item.fade-in {
-    opacity: 1;
-    transform: translateY(0);
 }
