@@ -1,7 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        projects: [
+        pedaproject: [
             {
                 modalId: 'amcModal',
                 title: 'Projet AMC',
