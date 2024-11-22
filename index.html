@@ -182,7 +182,7 @@
             <h2 class="text-center">Projets et réalisations</h2>
             <div class="row g-4">
                 <!-- générer les cartes dynamiquement -->
-                <div class="col-lg-3 col-md-4 col-12" v-for="project in projects" :key="project.modalId">
+                <div class="col-lg-3 col-md-4 col-12" v-for="project in pedaproject" :key="project.modalId">
                     <div class="peda-card card-base" @click="openModal(project.modalId)">
                         <div class="card-body">
                             <h4 class="card-title">{{ pedaproject.title }}</h4>
