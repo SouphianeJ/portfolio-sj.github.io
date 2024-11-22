@@ -145,8 +145,8 @@
             <h2 class="text-center text-tech">Projets Tech & Développement</h2>
             <div class="row gy-4">
                 <!-- Boucle pour générer les cartes dynamiquement -->
-                <div class="col-lg-3 col-md-4 col-12" v-for="project in techProjects" :key="project.modalId">
-                    <div class="tech-card card-base" @click="openModal(project.modalId)">
+                <div class="col-lg-3 col-md-4 col-12" v-for="tproject in techProjects" :key="tproject.modalId">
+                    <div class="tech-card card-base" @click="openModal(tproject.modalId)">
                         <div class="card-body">
                             <h4 class="tech-card-title">{{ techProjects.title }}</h4>
                             <p class="tech-card-text">{{ techProjects.text }}</p>
@@ -158,17 +158,17 @@
     </div>
 
     <!-- Boucle pour générer les modales dynamiquement -->
-    <div v-for="project in techProjects" :key="project.modalId">
-        <div class="modal fade" :id="project.modalId" tabindex="-1" :aria-labelledby="project.modalId + 'Label'" aria-hidden="true">
+    <div v-for="tproject in techProjects" :key="tproject.modalId">
+        <div class="modal fade" :id="project.modalId" tabindex="-1" :aria-labelledby="tproject.modalId + 'Label'" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" :id="project.modalId + 'Label'">{{ project.modalTitle }}</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="closeModal(project.modalId)">
+                        <h5 class="modal-title" :id="tproject.modalId + 'Label'">{{ project.modalTitle }}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="closeModal(tproject.modalId)">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body" v-html="project.modalContent">
+                    <div class="modal-body" v-html="tproject.modalContent">
                         <!-- Le contenu de la modale est injecté ici -->
                     </div>
                 </div>
