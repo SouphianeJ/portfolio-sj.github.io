@@ -148,8 +148,8 @@
                 <div class="col-lg-3 col-md-4 col-12" v-for="tproject in techProjects" :key="tproject.modalId">
                     <div class="tech-card card-base" @click="openModal(tproject.modalId)">
                         <div class="card-body">
-                            <h4 class="tech-card-title">{{ techProjects.title }}</h4>
-                            <p class="tech-card-text">{{ techProjects.text }}</p>
+                            <h4 class="tech-card-title">{{ tproject.title }}</h4>
+                            <p class="tech-card-text">{{ tproject.text }}</p>
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" :id="tproject.modalId + 'Label'">{{ project.modalTitle }}</h5>
+                        <h5 class="modal-title" :id="tproject.modalId + 'Label'">{{ tproject.modalTitle }}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="closeModal(tproject.modalId)">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -185,8 +185,8 @@
                 <div class="col-lg-3 col-md-4 col-12" v-for="project in pedaproject" :key="project.modalId">
                     <div class="peda-card card-base" @click="openModal(project.modalId)">
                         <div class="card-body">
-                            <h4 class="card-title">{{ pedaproject.title }}</h4>
-                            <p class="card-text">{{ pedaproject.text }}</p>
+                            <h4 class="card-title">{{ project.title }}</h4>
+                            <p class="card-text">{{ project.text }}</p>
                         </div>
                     </div>
                 </div>
