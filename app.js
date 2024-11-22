@@ -1,5 +1,5 @@
 new Vue({
-    el: '#peda-app',
+    el: '#app',
     data: {
         projects: [
             {
@@ -128,19 +128,8 @@ new Vue({
             }
             // Ajoutez d'autres projets si nécessaire
         ],
-    },
-    methods: {
-        openModal(modalId) {
-            $('#' + modalId).modal('show');
-        },
-        closeModal(modalId) {
-            $('#' + modalId).modal('hide');
-        }
-    }
-})
-    new Vue({
-        el: '#tech-app',
-        data: {    
+    
+  
         techProjects: [
             {
                 modalId: 'alphaModal',
