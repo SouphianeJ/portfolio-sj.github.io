@@ -159,7 +159,7 @@
 
     <!-- Boucle pour générer les modales dynamiquement -->
     <div v-for="tproject in techProjects" :key="tproject.modalId">
-        <div class="modal fade" :id="project.modalId" tabindex="-1" :aria-labelledby="tproject.modalId + 'Label'" aria-hidden="true">
+        <div class="modal fade" :id="tproject.modalId" tabindex="-1" :aria-labelledby="tproject.modalId + 'Label'" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
