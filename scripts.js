@@ -58,15 +58,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// Smooth scroll for internal links
+// Smooth scroll for internal links with offset and collapse navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
-    });
+  anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const targetElement = document.querySelector(this.getAttribute("href"));
+      const offset = 75; // Décalage de 100px depuis le haut (ajustez selon vos besoins)
+
+      if (targetElement) {
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - offset;
+
+          // Scroll avec décalage
+          window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth"
+          });
+
+          // Collapse navbar if open
+          const navbarCollapse = document.querySelector(".navbar-collapse");
+          if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+              const navbarToggler = document.querySelector(".navbar-toggler");
+              if (navbarToggler) {
+                  navbarToggler.click(); // Simule un clic pour refermer la navbar
+              }
+          }
+      }
+  });
 });
+
 
 // Popup Modal
 function openModal(modalId) {
@@ -81,6 +102,8 @@ const backgroundColorDark = rootStyles.getPropertyValue("--primary").trim();
 const textColorLight = rootStyles.getPropertyValue("--secondary-light").trim();
 const cardColorDefault = rootStyles.getPropertyValue("--light-green").trim();
 const cardColorDark = rootStyles.getPropertyValue("--dark-corail").trim();
+const borderColorDefault = rootStyles.getPropertyValue("--sage-green").trim();
+const borderColorDark = rootStyles.getPropertyValue("--light-corail").trim();
 
 
 // Variables pour le contexte du canvas et les particules
@@ -151,7 +174,7 @@ window.onscroll = function () {
     const rect = specialSection.getBoundingClientRect();
 
     // Point de déclenchement basé sur la hauteur de la fenêtre
-    const triggerOffset = window.innerHeight / 6; // 1/3 de la hauteur de l'écran
+    const triggerOffset = window.innerHeight / 10; // 1/3 de la hauteur de l'écran
 
     // Vérifie si la section spéciale est proche du centre ou du tiers de l'écran
     if (
@@ -166,8 +189,9 @@ window.onscroll = function () {
       document.body.style.backgroundColor = `rgba(${hexToRgb(backgroundColorDark)})`;
       document.body.style.color = `rgb(${hexToRgb(textColorLight)})`;
       //et aux cards
-      document.querySelectorAll("#projects .card").forEach((card) => {
+      document.querySelectorAll("#peda-projects .peda-card").forEach((card) => {
         card.style.backgroundColor = cardColorDark;
+        card.style.borderColor = borderColorDark;
       });
 
       // Démarre l'animation des particules si elle n'est pas déjà en cours
@@ -198,8 +222,9 @@ function resetStyles() {
   document.body.style.backgroundColor = backgroundColorDefault;
   document.body.style.color = textColorDefault;
   //et reset cards
-  document.querySelectorAll("#projects .card").forEach((card) => {
+  document.querySelectorAll("#peda-projects .peda-card").forEach((card) => {
     card.style.backgroundColor = cardColorDefault;
+    card.style.borderColor = borderColorDefault;
   });
   cancelAnimationFrame(animationFrame);
   animationFrame = null;
