@@ -7,7 +7,11 @@
     box-sizing: border-box;
 }
 
-
+/*.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
 
 .dev-font {
     font-family: 'Fira Code', monospace; /* Style développeur */
@@ -44,6 +48,8 @@ h1 .handwritten-font {
     --green: #B5CECC;
     --light-gblue: #C7D0DD;
     --gblue: #C6CFDC;
+    --tech-blue: #00d4ff;
+    --tech-violet: #7d3cff;
 
     --primary: #0A2540;
     --secondary-light: #FBF8F6;
@@ -57,14 +63,16 @@ body {
     line-height: 1.6;
     color: var(--primary);
     background-color: var(--secondary-light);
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 1.3s, color 0.5s;
+    padding-top: 70px;
 }
 
-/* Header */
-/* Sticky Header */
+/* Sticky nav */
 .navbar {
     background-color: var(--primary);
     transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-top: 2px solid var(--light-beige); /* Bordure si nécessaire */
 }
 
 .navbar .navbar-brand {
@@ -119,20 +127,6 @@ body {
     animation: scroll-alternate-large 13s ease-in-out infinite;
 }
 
-@media (max-width: 768px) {
-     .navbar .nav-link {
-        font-size: 0.9em;
-        display: inline-flex;
-        align-items: center;
-    }
-
-    .navbar .nav-link i {
-        margin-right: 5px;
-    }
-    .scrolling-icons {
-        animation: scroll-alternate-small 6s ease-in-out infinite;
-    }
- 
 
 
 
@@ -154,15 +148,12 @@ body {
 header {
     background-color: var(--secondary-light);
     color: var(--primary);
-    margin-top: 70px;/* Adjust this value based on navbar height */
 }
 
 .header-background {
     position: relative;
     overflow: hidden; /* Coupe le contenu qui dépasse */
-    min-height: 150px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
-    padding-top: 50px; /* Espace pour centrer le contenu verticalement */
-    /*z-index: -1;*/
+    min-height: 100px; /* Ajustez la hauteur selon le SVG pour éviter un découpage */
 }
 
 
@@ -317,7 +308,6 @@ header p {
 }
 
 
-/* Section Titles */
 h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
@@ -374,27 +364,84 @@ h2 {
 }
 
 
-/* Skills Section */
-#skills h3 {
-    font-size: 1.5em;
-    color: var(--dark-corail);
+/* Classes communes pour les cartes */
+.card-base {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: transform 0.7s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-#skills p {
-    font-size: 1em;
+/* Styles spécifiques pour les tech-cards */
+.tech-card {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px rgba(128, 0, 128, 0.3);
+    border-color: var(--tech-violet); /* Couleur initiale */
+    animation: gradientAnimation 4s infinite alternate;
 }
 
-/* Project Cards */
-#projects .card {
+.tech-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 8px 15px rgba(128, 0, 255, 0.5);
+}
+
+/* Styles spécifiques pour les peda-cards */
+.peda-card {
     background-color: var(--light-green);
-    border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.5s, color 0.5s; /* Combine toutes les transitions */
+    border-color: var(--sage-green); /* Couleur initiale */
 }
 
-#projects .card:hover {
-    transform: translateY(-10px) scale(1.07); /* Combine les transformations dans une seule déclaration */
+.peda-card:hover {
+    transform: translateY(-10px) scale(1.07);
 }
+
+/* Styles pour le contenu des cartes */
+.card-body {
+    padding: 15px;
+    /*color: var(--primary);*/
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Animation infinie pour les titres et la bordure des tech-cards */
+.tech-card .card-title {
+    color: var(--tech-violet); /* Couleur initiale */
+    animation: gradientAnimation 4s infinite alternate;
+}
+
+/* Définition de l'animation unique */
+@keyframes gradientAnimation {
+    0% {
+        border-color: var(--tech-violet); /* Violet */
+        color: var(--tech-violet); /* Violet */
+    }
+    15% {
+        border-color: var(--tech-blue); /* Bleu */
+        color: var(--tech-blue); /* Bleu */
+    }
+    60% {
+        border-color: var(--tech-violet); /* Violet */
+        color: var(--tech-violet); /* Violet */
+    }
+    100% {
+        border-color: var(--tech-violet); /* Violet */
+        color: var(--tech-violet); /* Violet */
+    }
+}
+
+.tech-card .tech-card-text {
+    color: var(--white);
+}
+
 
 .modal-content {
     padding: 20px;
@@ -450,8 +497,14 @@ footer a:hover {
   overflow: hidden;
 }
 
-.special-section h2 {
-    color: var(--secondary-light);
+
+/* Skills Section */
+.special-section h3 {
+    font-size: 1.5em;
+}
+
+.special-section p {
+    font-size: 1em;
 }
 
 #particleCanvas {
@@ -462,3 +515,66 @@ footer a:hover {
   height: 100%;
   pointer-events: none;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+       font-size: 0.9em;
+       display: inline-flex;
+       align-items: center;
+   }
+
+   .navbar .nav-link i {
+       margin-right: 5px;
+   }
+   .scrolling-icons {
+       animation: scroll-alternate-small 6s ease-in-out infinite;
+   }
+
+       /* Centrer la ligne verticale */
+       #experience .timeline::before {
+           left: 0; /* Supprime la ligne centrale */
+           width: 0; /* Ligne invisible sur mobile */
+       }
+   
+       /* Timeline items en mode stacked */
+       .timeline-item {
+           width: 100%; /* Occupe toute la largeur */
+           padding: 10px 20px; /* Ajuste le padding pour plus de confort */
+           left: 0 !important; /* Réinitialise la position */
+           transform: translateX(0); /* Supprime tout décalage */
+       }
+   
+       .timeline-item.left, .timeline-item.right {
+           left: 0; /* Force tous les items à se superposer */
+       }
+   
+       /* Ajout d'une bordure gauche pour simuler la ligne */
+       .timeline-item {
+           border-left: 4px solid var(--secondary-deep);
+           position: relative;
+       }
+   
+      
+   
+       /* Ajout d'un trait bleu entre chaque élément */
+       .timeline-item:not(:last-child) {
+           /*border-bottom: 2px solid var(--primary); */
+           margin-bottom: 20px; 
+           padding-bottom: 5px; 
+       }
+
+       .timeline-item h3 {
+        font-weight: 600;
+       }
+
+       .timeline-item p{
+        margin-bottom: 0;
+       }
+   
+   
+}
+
+
