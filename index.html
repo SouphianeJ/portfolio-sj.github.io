@@ -136,35 +136,49 @@
 </section>
 
 
-<!--tech projets-->
+<!--tech projects-->
+<div class="app">
 <section id="tech-projects">
     <div id="special-section" class="special-section py-4">
         <div class="container">
             <canvas id="particleCanvas"></canvas>
             <h2 class="text-center text-tech">Projets Tech & Développement</h2>
             <div class="row gy-4">
-                <div class="col-lg-3 col-md-4 col-12">
-                    <div class="tech-card card-base">
+                <!-- Boucle pour générer les cartes dynamiquement -->
+                <div class="col-lg-3 col-md-4 col-12" v-for="project in techProjects" :key="project.modalId">
+                    <div class="tech-card card-base" @click="openModal(project.modalId)">
                         <div class="card-body">
-                            <h4 class="tech-card-title">Projet Alpha</h4>
-                            <p class="tech-card-text">Développement d'une API en Node.js pour gérer des flux de données complexes avec une sécurité avancée.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12">
-                    <div class="tech-card card-base">
-                        <div class="card-body">
-                            <h4 class="tech-card-title">Projet Beta</h4>
-                            <p class="tech-card-text">Création d'une interface utilisateur en React.js avec une optimisation des performances et un design responsive.</p>
+                            <h4 class="tech-card-title">{{ project.title }}</h4>
+                            <p class="tech-card-text">{{ project.text }}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
 
-<div id="app">
+    <!-- Boucle pour générer les modales dynamiquement -->
+    <div v-for="project in techProjects" :key="project.modalId">
+        <div class="modal fade" :id="project.modalId" tabindex="-1" :aria-labelledby="project.modalId + 'Label'" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" :id="project.modalId + 'Label'">{{ project.modalTitle }}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="closeModal(project.modalId)">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" v-html="project.modalContent">
+                        <!-- Le contenu de la modale est injecté ici -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<div class="app">
     <section id="peda-projects" class="py-5">
         <div class="container">
             <h2 class="text-center">Projets et réalisations</h2>
