@@ -148,8 +148,8 @@
                 <div class="col-lg-3 col-md-4 col-12" v-for="project in techProjects" :key="project.modalId">
                     <div class="tech-card card-base" @click="openModal(project.modalId)">
                         <div class="card-body">
-                            <h4 class="tech-card-title">{{ project.title }}</h4>
-                            <p class="tech-card-text">{{ project.text }}</p>
+                            <h4 class="tech-card-title">{{ techProjects.title }}</h4>
+                            <p class="tech-card-text">{{ techProjects.text }}</p>
                         </div>
                     </div>
                 </div>
@@ -185,8 +185,8 @@
                 <div class="col-lg-3 col-md-4 col-12" v-for="project in projects" :key="project.modalId">
                     <div class="peda-card card-base" @click="openModal(project.modalId)">
                         <div class="card-body">
-                            <h4 class="card-title">{{ project.title }}</h4>
-                            <p class="card-text">{{ project.text }}</p>
+                            <h4 class="card-title">{{ pedaproject.title }}</h4>
+                            <p class="card-text">{{ pedaproject.text }}</p>
                         </div>
                     </div>
                 </div>
