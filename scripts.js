@@ -89,10 +89,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// Popup Modal
-/*function openModal(modalId) {
-    $('#' + modalId).modal('show');
-}*/
 
 // Obtenir les couleurs à partir des variables CSS
 const rootStyles = getComputedStyle(document.documentElement);
@@ -104,8 +100,8 @@ const cardColorDefault = rootStyles.getPropertyValue("--light-green").trim();
 const cardColorDark = rootStyles.getPropertyValue("--dark-corail").trim();
 const borderColorDefault = rootStyles.getPropertyValue("--sage-green").trim();
 const borderColorDark = rootStyles.getPropertyValue("--light-corail").trim();
-
-
+const backModalColorDark = rootStyles.getPropertyValue("--tech-violet").trim();
+const ModalColorDefaut = rootStyles.getPropertyValue("--secondary-light").trim();
 // Variables pour le contexte du canvas et les particules
 const canvas = document.getElementById("particleCanvas");
 const ctx = canvas.getContext("2d");
@@ -192,6 +188,10 @@ window.onscroll = function () {
       document.querySelectorAll("#peda-projects .peda-card").forEach((card) => {
         card.style.backgroundColor = cardColorDark;
         card.style.borderColor = borderColorDark;
+      })
+      document.querySelectorAll(".tech-modal .modal-content").forEach((modal) => {
+        modal.style.backgroundColor = backModalColorDark;
+        modal.style.borderColor = ModalColorDefaut;
       });
 
       // Démarre l'animation des particules si elle n'est pas déjà en cours
@@ -225,6 +225,10 @@ function resetStyles() {
   document.querySelectorAll("#peda-projects .peda-card").forEach((card) => {
     card.style.backgroundColor = cardColorDefault;
     card.style.borderColor = borderColorDefault;
+  });
+  document.querySelectorAll(".tech-modal .modal-content").forEach((modal) => {
+    modal.style.backgroundColor = ModalColorDefaut;
+    modal.style.borderColor = textColorDefault;
   });
   cancelAnimationFrame(animationFrame);
   animationFrame = null;
