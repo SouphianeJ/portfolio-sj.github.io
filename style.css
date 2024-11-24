@@ -368,7 +368,9 @@ h2 {
 .card-base {
     border: 2px solid transparent;
     border-radius: 10px;
+    min-width: 200px;
     transition: transform 0.7s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 100%;
 }
 
 /* Styles spécifiques pour les tech-cards */

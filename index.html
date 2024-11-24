@@ -38,7 +38,7 @@
     </div>
 </nav>
 <!-- Header -->
-  <header class="header-background text-center py-5">
+  <header class="header-background text-center py-3">
   
     <div class="container">
     
@@ -62,7 +62,7 @@
         
     </div>
 </header>
-<div style="width: 100vw; max-height: 200px;">
+<div style="width: 100vw; max-height: 170px;">
   <svg width="100%" height="100%" viewBox="0 0 100 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <!-- Ligne tracée avec une courbe fluide -->
     <path d="M 0,10 Q 25,5 50,10 T 100,10" 
@@ -143,9 +143,9 @@
         <div class="container">
             <canvas id="particleCanvas"></canvas>
             <h2 class="text-center text-tech">Projets Tech & Développement</h2>
-            <div class="row gy-4">
+            <div class="row gx-4">
                 <!-- Boucle pour générer les cartes dynamiquement -->
-                <div class="col-lg-3 col-md-4 col-12 h-100" v-for="tproject in techProjects" :key="tproject.modalId">
+                <div class="col py-1" v-for="tproject in techProjects" :key="tproject.modalId">
                     <div class="tech-card card-base" @click="openModal(tproject.modalId)">
                         <div class="card-body">
                             <h4 class="tech-card-title">{{ tproject.title }}</h4>
@@ -180,9 +180,9 @@
     <section id="peda-projects" class="py-5">
         <div class="container">
             <h2 class="text-center">Projets et réalisations</h2>
-            <div class="row g-4">
+            <div class="row gx-4">
                 <!-- générer les cartes dynamiquement -->
-                <div class="col-lg-3 col-md-4 col-12 h-100" v-for="project in pedaproject" :key="project.modalId">
+                <div class="col py-1" v-for="project in pedaproject" :key="project.modalId">
                     <div class="peda-card card-base" @click="openModal(project.modalId)">
                         <div class="card-body">
                             <h4 class="card-title">{{ project.title }}</h4>
