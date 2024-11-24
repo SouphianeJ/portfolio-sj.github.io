@@ -90,9 +90,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // Popup Modal
-function openModal(modalId) {
+/*function openModal(modalId) {
     $('#' + modalId).modal('show');
-}
+}*/
 
 // Obtenir les couleurs à partir des variables CSS
 const rootStyles = getComputedStyle(document.documentElement);
