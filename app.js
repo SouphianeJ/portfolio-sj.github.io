@@ -69,8 +69,63 @@ new Vue({
                     </ul>
                 `
             },
+            
+                
+            // Ajoutez d'autres projets si nécessaire
+        ],
+    
+  
+        techProjects: [
             {
-                modalId: 'resamatModal',
+                modalId: 'alphaModal',
+                title: 'Projet Alpha',
+                text: 'Développement d\'une API en Node.js pour gérer des flux de données complexes avec une sécurité avancée.',
+                modalTitle: 'Projet Alpha - Développement d\'une API en Node.js',
+                modalContent: `
+                    <p>
+                        Le Projet Alpha consiste en la création d'une API robuste en Node.js destinée à gérer des flux de données complexes tout en assurant un haut niveau de sécurité.
+                    </p>
+                    <h5>Caractéristiques principales</h5>
+                    <ul>
+                        <li><strong>Gestion des flux de données :</strong> Mise en place de mécanismes efficaces pour traiter de grandes quantités de données en temps réel.</li>
+                        <li><strong>Sécurité avancée :</strong> Implémentation de protocoles de sécurité tels que OAuth2, JWT, et chiffrement des données sensibles.</li>
+                        <li><strong>Scalabilité :</strong> Architecture conçue pour s'adapter à une croissance rapide du volume de données et du nombre d'utilisateurs.</li>
+                    </ul>
+                    <h5>Technologies utilisées</h5>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                    </ul>
+                `
+            },
+            {
+                modalId: 'betaModal',
+                title: 'Projet Beta',
+                text: 'Création d\'une interface utilisateur en React.js avec une optimisation des performances et un design responsive.',
+                modalTitle: 'Projet Beta - Interface utilisateur en React.js',
+                modalContent: `
+                    <p>
+                        Le Projet Beta vise à développer une interface utilisateur moderne et responsive en utilisant React.js, en mettant l'accent sur l'optimisation des performances et l'expérience utilisateur.
+                    </p>
+                    <h5>Points forts du projet</h5>
+                    <ul>
+                        <li><strong>Design responsive :</strong> Adaptabilité de l'interface à différents types d'écrans (mobile, tablette, desktop).</li>
+                        <li><strong>Optimisation des performances :</strong> Utilisation de techniques telles que le code splitting, lazy loading, et optimisation des rendus pour améliorer la vitesse de l'application.</li>
+                        <li><strong>Expérience utilisateur :</strong> Création d'une navigation intuitive et interactive pour améliorer l'engagement des utilisateurs.</li>
+                    </ul>
+                    <h5>Technologies utilisées</h5>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Redux</li>
+                        <li>Webpack</li>
+                        <li>Sass</li>
+                    </ul>
+                `
+            },
+            {
+            modalId: 'resamatModal',
                 title: 'Développement et déploiement de la plateforme Resamat',
                 text: 'Conception et déploiement d’une plateforme en PHP et SQL pour la gestion centralisée des ressources pédagogiques, avec résolution de conflits de réservations et suivi des emprunts.',
                 modalTitle: 'Développement et déploiement de la plateforme Resamat',
@@ -124,59 +179,6 @@ new Vue({
                     <p>
                         Ce projet a mis en évidence l’importance de l’automatisation et de la centralisation dans la gestion des ressources pédagogiques. Mon rôle a été de superviser le développement en PHP et SQL, de concevoir la base de données, de développer les fonctionnalités backend et frontend, et d’assurer une intégration fluide dans l’infrastructure existante de l’université.
                     </p>
-                `
-            }
-            // Ajoutez d'autres projets si nécessaire
-        ],
-    
-  
-        techProjects: [
-            {
-                modalId: 'alphaModal',
-                title: 'Projet Alpha',
-                text: 'Développement d\'une API en Node.js pour gérer des flux de données complexes avec une sécurité avancée.',
-                modalTitle: 'Projet Alpha - Développement d\'une API en Node.js',
-                modalContent: `
-                    <p>
-                        Le Projet Alpha consiste en la création d'une API robuste en Node.js destinée à gérer des flux de données complexes tout en assurant un haut niveau de sécurité.
-                    </p>
-                    <h5>Caractéristiques principales</h5>
-                    <ul>
-                        <li><strong>Gestion des flux de données :</strong> Mise en place de mécanismes efficaces pour traiter de grandes quantités de données en temps réel.</li>
-                        <li><strong>Sécurité avancée :</strong> Implémentation de protocoles de sécurité tels que OAuth2, JWT, et chiffrement des données sensibles.</li>
-                        <li><strong>Scalabilité :</strong> Architecture conçue pour s'adapter à une croissance rapide du volume de données et du nombre d'utilisateurs.</li>
-                    </ul>
-                    <h5>Technologies utilisées</h5>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>MongoDB</li>
-                        <li>Redis</li>
-                    </ul>
-                `
-            },
-            {
-                modalId: 'betaModal',
-                title: 'Projet Beta',
-                text: 'Création d\'une interface utilisateur en React.js avec une optimisation des performances et un design responsive.',
-                modalTitle: 'Projet Beta - Interface utilisateur en React.js',
-                modalContent: `
-                    <p>
-                        Le Projet Beta vise à développer une interface utilisateur moderne et responsive en utilisant React.js, en mettant l'accent sur l'optimisation des performances et l'expérience utilisateur.
-                    </p>
-                    <h5>Points forts du projet</h5>
-                    <ul>
-                        <li><strong>Design responsive :</strong> Adaptabilité de l'interface à différents types d'écrans (mobile, tablette, desktop).</li>
-                        <li><strong>Optimisation des performances :</strong> Utilisation de techniques telles que le code splitting, lazy loading, et optimisation des rendus pour améliorer la vitesse de l'application.</li>
-                        <li><strong>Expérience utilisateur :</strong> Création d'une navigation intuitive et interactive pour améliorer l'engagement des utilisateurs.</li>
-                    </ul>
-                    <h5>Technologies utilisées</h5>
-                    <ul>
-                        <li>React.js</li>
-                        <li>Redux</li>
-                        <li>Webpack</li>
-                        <li>Sass</li>
-                    </ul>
                 `
             }
             // Vous pouvez ajouter d'autres projets techniques ici
