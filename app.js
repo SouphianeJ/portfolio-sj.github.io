@@ -69,7 +69,36 @@ new Vue({
                     </ul>
                 `
             },
-            
+            {  modalId: 'videoHycare',
+                title: 'Vidéo Projet Hycare',
+                text: 'Capsules vidéos de vulgarisation et explications de concepts scientifiques en physiologie',
+                modalTitle: 'Capsules vidéos de vulgarisation avec le Rapidmooc',
+                modalContent:
+               ` <p>
+                    Ce projet avait pour objectif de produire une série de capsules vidéo pour les cours de physiologie, permettant aux étudiants de revoir les travaux pratiques (TP) et de mieux comprendre des notions complexes. En intégrant des démonstrations filmées et des animations illustratives, les vidéos visaient à renforcer l’apprentissage en permettant aux étudiants d’observer les procédures des TP, de manière à mieux assimiler les concepts de physiologie.
+                </p>
+                
+                <h5>Étapes clés du projet</h5>
+                <ul>
+                    <li><strong>Recueil des images et écriture des scripts :</strong> En collaboration avec un doctorant, nous avons rédigé les scripts des vidéos pour structurer chaque concept en fonction des besoins pédagogiques identifiés. L’accent a été mis sur les points critiques, souvent difficiles à aborder en présentiel, afin de cibler les besoins spécifiques des étudiants.</li>
+                    
+                    <li><strong>Filmage et création de contenu :</strong> J’ai assuré le filmage de démonstrations avec le dispositif Rapidmooc, et j’ai également accompagné le doctorant dans la prise de ses propres vidéos. Rapidmooc, avec son interface simple et ses outils de prompteur intégrés, a facilité la production de vidéos pédagogiques de qualité.</li>
+                    
+                    <li><strong>Conception des schémas et animations :</strong> J’ai travaillé avec un prestataire pour la réalisation des animations. À partir des schémas que nous avons créés, j’ai défini un cahier des charges précis pour guider le prestataire dans l’animation des concepts physiologiques, afin de renforcer la compréhension visuelle des étudiants.</li>
+                    
+                    <li><strong>Montage et finalisation des vidéos :</strong> J’ai pris en charge plusieurs étapes du montage avec le logiciel Camtasia, intégrant les éléments animés et filmés pour créer une continuité visuelle et rendre le contenu plus fluide.</li>
+                </ul>
+                
+                <h5>Résultats obtenus</h5>
+                <ul>
+                    <li><strong>Renforcement de l’apprentissage par l'action :</strong> Les vidéos ont permis aux étudiants de revoir les TP et d’observer les procédures en détail, ce qui a facilité la compréhension des notions plus complexes.</li>
+                    <li><strong>Engagement des étudiants :</strong> Le format court et visuel des vidéos a soutenu l’engagement des étudiants, leur offrant la possibilité de réviser les démonstrations à leur rythme.</li>
+                    <li><strong>Retour positif des enseignants et étudiants :</strong> Les vidéos ont été bien accueillies comme complément aux cours, et ce type de support a suscité un intérêt pour des initiatives similaires dans d’autres disciplines.</li>
+                </ul>
+                
+                <p>
+                    Ce projet a permis d'introduire de nouveaux supports visuels dans les cours de physiologie en s’appuyant sur des outils multimédia. Mon rôle a couvert l’ensemble du processus, de l’écriture des scripts et du filmage, à la supervision des animations et au montage final.
+                </p>`
                 
             // Ajoutez d'autres projets si nécessaire
         ],
