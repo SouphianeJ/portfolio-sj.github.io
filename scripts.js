@@ -89,7 +89,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
 // Obtenir les couleurs à partir des variables CSS
 const rootStyles = getComputedStyle(document.documentElement);
 const backgroundColorDefault = rootStyles.getPropertyValue("--secondary-light").trim();
@@ -239,3 +239,4 @@ addParticles();
 
 // Gère le scroll pour appliquer les effets de changement de couleur et d'activation des particules
 
+})
