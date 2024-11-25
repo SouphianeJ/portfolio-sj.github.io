@@ -3,6 +3,58 @@ new Vue({
     data: {
         pedaproject: [
             {
+                modalId: 'storylineModal',
+                title: 'Module interactif avec Storyline',
+                text: 'Création d\'un module d\'apprentissage interactif utilisant Articulate Storyline pour améliorer l\'engagement et la compréhension des étudiants.',
+                modalTitle: 'Création d\'un module interactif avec Storyline',
+                modalContent: `
+                    <p>Ce projet consistait à développer un module d'apprentissage interactif en utilisant le logiciel <strong>Articulate Storyline</strong>. L'objectif était de créer une ressource pédagogique dynamique pour les étudiants, leur permettant d'interagir avec le contenu et d'améliorer leur compréhension de sujets complexes.</p>
+                    
+                    <h5>Étapes clés du projet</h5>
+                    <ul>
+                        <li><strong>Analyse des besoins pédagogiques :</strong> Collaboration avec les enseignants pour identifier les sujets nécessitant une approche interactive afin de faciliter l'apprentissage.</li>
+                        <li><strong>Conception du storyboard :</strong> Élaboration d'un storyboard détaillé pour structurer le contenu du module, définir les interactions et prévoir les éléments multimédias à intégrer.</li>
+                        <li><strong>Développement du module avec Storyline :</strong> Utilisation d'Articulate Storyline pour créer le module interactif, en intégrant des quiz, des animations, des scénarios et des feedbacks personnalisés.</li>
+                        <li><strong>Tests et ajustements :</strong> Réalisation de tests utilisateurs avec un groupe d'étudiants pour recueillir des retours et apporter les ajustements nécessaires afin d'optimiser l'efficacité pédagogique du module.</li>
+                        <li><strong>Intégration dans le LMS eCampus :</strong> Publication du module au format compatible SCORM pour une intégration transparente dans la plateforme eCampus, permettant un suivi des progrès des étudiants.</li>
+                    </ul>
+                    
+                    <h5>Résultats obtenus</h5>
+                    <ul>
+                        <li><strong>Amélioration de l'engagement des étudiants :</strong> Le module interactif a favorisé une participation active des étudiants, rendant l'apprentissage plus attractif.</li>
+                        <li><strong>Renforcement de la compréhension :</strong> Les interactions et feedbacks ont permis aux étudiants de mieux assimiler les concepts, avec une amélioration notable des résultats aux évaluations.</li>
+                        <li><strong>Reproductibilité du modèle :</strong> Le succès du module a encouragé le développement d'autres ressources interactives dans différentes disciplines.</li>
+                    </ul>
+                `
+            },
+            
+            {
+                modalId: 'spocsModal',
+                title: 'Développement de SPOCs',
+                text: 'Conception et déploiement de Small Private Online Courses (SPOCs) pour répondre aux besoins pédagogiques spécifiques de l\'Université Paris-Saclay.',
+                modalTitle: 'Développement de SPOCs pédagogiques',
+                modalContent: `
+                    <p>Ce projet avait pour objectif de concevoir et développer des SPOCs (Small Private Online Courses) pour répondre aux besoins pédagogiques spécifiques de l’Université Paris-Saclay. Ces formations en ligne, accessibles à un groupe restreint d’utilisateurs, ont été utilisées pour accompagner les étudiants dans leurs apprentissages et pour former les enseignants à de nouvelles méthodes pédagogiques. Les SPOCs offraient des contenus multimédias interactifs, des exercices d’évaluation et des ressources pédagogiques adaptées.</p>
+                    
+                    <h5>Étapes clés du projet</h5>
+                    <ul>
+                        <li><strong>Analyse des besoins pédagogiques :</strong> Identification des objectifs de chaque SPOC en collaboration avec les enseignants et responsables pédagogiques. Chaque SPOC a été conçu pour répondre à des besoins précis, tels que l’apprentissage d’un logiciel spécifique ou la préparation à des évaluations.</li>
+                        <li><strong>Création de contenus multimédias :</strong> Développement de vidéos, de tutoriels interactifs et de supports pédagogiques adaptés aux thématiques des SPOCs. Des formats variés ont été utilisés pour maximiser l’engagement et l’apprentissage des participants.</li>
+                        <li><strong>Structuration des cours et intégration dans la plateforme :</strong> Organisation des SPOCs en modules et parcours progressifs, avec intégration des contenus dans la plateforme eCampus via des outils d’édition compatibles (SCORM, LTI).</li>
+                        <li><strong>Conception d’évaluations interactives :</strong> Mise en place d’exercices et de quiz pour évaluer les progrès des participants, avec des retours automatisés pour renforcer leur apprentissage.</li>
+                        <li><strong>Formation et accompagnement des enseignants :</strong> Organisation de sessions de formation pour aider les enseignants à concevoir leurs propres SPOCs et à utiliser efficacement les outils numériques pour leurs cours.</li>
+                    </ul>
+                    
+                    <h5>Résultats obtenus</h5>
+                    <ul>
+                        <li><strong>Apprentissage flexible et personnalisé :</strong> Les SPOCs ont permis aux étudiants et enseignants de suivre les formations à leur rythme, en s’adaptant à leurs besoins spécifiques.</li>
+                        <li><strong>Renforcement des compétences numériques des enseignants :</strong> Grâce aux SPOCs, de nombreux enseignants ont pu intégrer des pratiques numériques dans leur pédagogie.</li>
+                        <li><strong>Amélioration de l’engagement des apprenants :</strong> Les contenus interactifs et les évaluations en ligne ont contribué à maintenir l’attention et la motivation des participants.</li>
+                    </ul>
+                `
+            },
+            
+            {
                 modalId: 'amcModal',
                 title: 'Projet AMC',
                 text: 'Mise en place de la correction automatisée de QCM pour les examens papier, avec développement d\'outils en Python et VBA. Ce projet a permis de réduire le temps de correction de 45 jours par session.',
@@ -58,14 +110,21 @@ new Vue({
                         <li><strong>Analyse des besoins spécifiques :</strong> Identification des processus manuels avec PDF et Excel, et des besoins des utilisateurs en matière de traitement de données.</li>
                         <li><strong>Développement de scripts en VBA et Python :</strong> Création de scripts pour automatiser le découpage de PDF, publipostage de notes, et importation en lot dans Apogée.</li>
                         <li><strong>Personnalisation et tests :</strong> Ajustement des scripts pour répondre aux besoins spécifiques des utilisateurs et tests approfondis.</li>
-                        <li><strong>Formation des utilisateurs :</strong> Création de guides et sessions de formation pour une utilisation autonome des outils.</li>
+                       
                         <li><strong>Support et maintenance continue :</strong> Assistance technique et mises à jour pour répondre aux nouvelles demandes.</li>
                     </ul>
                     <h5>Résultats obtenus</h5>
                     <ul>
                         <li><strong>Gain de temps significatif :</strong> Réduction considérable du temps consacré aux tâches de traitement de fichiers, notamment lors des examens.</li>
-                        <li><strong>Réduction des erreurs humaines :</strong> Automatisation des processus, garantissant une précision optimale.</li>
-                        <li><strong>Autonomie accrue :</strong> Les utilisateurs peuvent désormais gérer ces tâches de manière indépendante, augmentant ainsi leur productivité.</li>
+                        <li><strong>Réduction des erreurs humaines :</strong> Automatisation des processus, pour éviter la saisie manuelle source principale d'erreur.</li>
+                        
+                    </ul>
+                    <h5>Exemples</h5>
+                    <ul>
+                        <li><strong>Génération des PV de Jury </strong> </li>
+                        <li><strong>Génération des Plannings</strong> </li>
+                        <li><strong>Exportation des notes vers Apogée</strong> </li>
+                        
                     </ul>
                 `
             },
