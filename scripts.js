@@ -88,6 +88,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+function debounce(func, wait) {
+  let timeout;
+  return function (...args) {
+    const context = this;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(context, args), wait);
+  };
+}
+
 
 document.addEventListener("DOMContentLoaded", function() {
 // Obtenir les couleurs à partir des variables CSS
@@ -130,7 +139,7 @@ function createParticle() {
 
 // Ajoute des particules au tableau
 function addParticles() {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 12; i++) {
     particles.push(createParticle());
   }
 }
@@ -163,7 +172,8 @@ function animateParticles() {
 
 
 // Gère le scroll pour appliquer les effets de changement de couleur et d'activation des particules
-window.onscroll = function () {
+
+window.onscroll = debounce(function () {
   const specialSection = document.getElementById("special-section");
 
   if (specialSection) {
@@ -206,7 +216,7 @@ window.onscroll = function () {
     // Réinitialise le style si la section spéciale n'existe pas
     resetStyles();
   }
-};
+},0);
 // Fonction de conversion HEX en RGB pour utiliser rgba avec les couleurs CSS
 function hexToRgb(hex) {
   let bigint = parseInt(hex.replace("#", ""), 16);
