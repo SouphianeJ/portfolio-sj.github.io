@@ -99,6 +99,7 @@ new Vue({
                 <p>
                     Ce projet a permis d'introduire de nouveaux supports visuels dans les cours de physiologie en s’appuyant sur des outils multimédia. Mon rôle a couvert l’ensemble du processus, de l’écriture des scripts et du filmage, à la supervision des animations et au montage final.
                 </p>`
+            }
                 
             // Ajoutez d'autres projets si nécessaire
         ],
