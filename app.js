@@ -199,29 +199,37 @@ new Vue({
                 `
             },
             {
-                modalId: 'betaModal',
-                title: 'Projet Beta',
-                text: 'Création d\'une interface utilisateur en React.js avec une optimisation des performances et un design responsive.',
-                modalTitle: 'Projet Beta - Interface utilisateur en React.js',
+                modalId: 'erpEnrollmentModal',
+                title: 'Création d’un ERP pour la gestion des inscriptions',
+                text: 'Développement d’un ERP sur mesure pour automatiser la gestion des inscriptions, en collaboration avec un développeur web et un prestataire senior.',
+                modalTitle: 'Création d’un ERP pour la gestion des inscriptions',
                 modalContent: `
-                    <p>
-                        Le Projet Beta vise à développer une interface utilisateur moderne et responsive en utilisant React.js, en mettant l'accent sur l'optimisation des performances et l'expérience utilisateur.
-                    </p>
-                    <h5>Points forts du projet</h5>
+                    <p>Ce projet consistait à concevoir et développer un ERP (Enterprise Resource Planning) pour la gestion des inscriptions des étudiants, en collaboration avec un développeur web et un prestataire senior. Réalisé avec le framework Symfony, cet ERP centralise et automatise les processus d’inscription tout en répondant aux besoins spécifiques des équipes administratives et pédagogiques.</p>
+                    
+                    <h5>Étapes clés du projet</h5>
                     <ul>
-                        <li><strong>Design responsive :</strong> Adaptabilité de l'interface à différents types d'écrans (mobile, tablette, desktop).</li>
-                        <li><strong>Optimisation des performances :</strong> Utilisation de techniques telles que le code splitting, lazy loading, et optimisation des rendus pour améliorer la vitesse de l'application.</li>
-                        <li><strong>Expérience utilisateur :</strong> Création d'une navigation intuitive et interactive pour améliorer l'engagement des utilisateurs.</li>
+                        <li><strong>Recueil des besoins et analyse fonctionnelle :</strong> Organisation de réunions avec les parties prenantes, rédaction du cahier des charges pour lister les fonctionnalités nécessaires.</li>
+                        <li><strong>Co-création de la base de données :</strong> Conception de la structure en collaboration avec le prestataire senior, normalisation des données pour optimiser les performances.</li>
+                        <li><strong>Développement backend et frontend :</strong>
+                            <ul>
+                                <li>Utilisation de Symfony pour structurer le backend et gérer les workflows spécifiques.</li>
+                                <li>Création d’interfaces intuitives pour les équipes administratives.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Gestion et suivi du projet :</strong> Coordination des équipes, suivi des sprints, et livraisons régulières pour garantir l’avancement.</li>
+                        <li><strong>Tests, déploiement et formation :</strong> Vérification de la fiabilité du système, déploiement progressif et formation des utilisateurs finaux.</li>
                     </ul>
-                    <h5>Technologies utilisées</h5>
+                    
+                    <h5>Résultats obtenus</h5>
                     <ul>
-                        <li>React.js</li>
-                        <li>Redux</li>
-                        <li>Webpack</li>
-                        <li>Sass</li>
+                        <li><strong>Automatisation des processus :</strong> Centralisation des inscriptions, réduction du temps de traitement.</li>
+                        <li><strong>Adaptabilité :</strong> Système évolutif, prêt à intégrer de nouvelles fonctionnalités.</li>
+                        <li><strong>Satisfaction des équipes :</strong> ERP apprécié pour sa simplicité et son impact sur la gestion quotidienne.</li>
+                        <li><strong>Collaboration réussie :</strong> Coordination efficace entre les développeurs et les utilisateurs finaux.</li>
                     </ul>
                 `
-            },
+            }
+            ,
             {
             modalId: 'resamatModal',
                 title: 'Développement et déploiement de la plateforme Resamat',
