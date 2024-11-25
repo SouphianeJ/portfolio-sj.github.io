@@ -3,6 +3,38 @@ new Vue({
     data: {
         pedaproject: [
             {
+                modalId: 'itProjectProgramModal',
+                title: 'Programme pédagogique en informatique et gestion de projet',
+                text: 'Conception et animation d’un programme pédagogique innovant intégrant classe inversée, jeux de rôle et portfolios numériques.',
+                modalTitle: 'Programme pédagogique en informatique et gestion de projet',
+                modalContent: `
+                    <p>Ce projet consistait à concevoir et animer un programme pédagogique structuré pour des licences en éducation et en management, en collaboration avec le responsable informatique et d’autres intervenants. L’objectif était de fournir un parcours de formation cohérent en informatique (bureautique avancée) et en gestion de projet, tout en intégrant des approches innovantes comme la classe inversée, la correction par les pairs et les jeux de rôle pédagogiques.</p>
+                    
+                    <h5>Étapes clés du projet</h5>
+                    <ul>
+                        <li><strong>Conception du programme pédagogique :</strong> Définition des compétences clés, structuration des parcours de formation pour une progression cohérente des compétences.</li>
+                        <li><strong>Révision du socle commun en bureautique :</strong>
+                            <ul>
+                                <li>Intégration de la correction par les pairs dans les exercices pratiques.</li>
+                                <li>Mise en place de la classe inversée, avec des supports numériques accessibles sur Moodle.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cours de gestion de projet sous forme de jeu de rôle :</strong> Scénario fictif pour simuler des environnements réels, avec répartition des rôles et gestion des délais.</li>
+                        <li><strong>Portfolio de projet pour les licences 3 :</strong> Introduction de portfolios numériques pour documenter les projets et valoriser les réalisations.</li>
+                        <li><strong>Collaboration et mise en ligne des contenus :</strong> Coordination avec les intervenants, mise en ligne des contenus sur Moodle, et suivi des étudiants.</li>
+                    </ul>
+                    
+                    <h5>Résultats obtenus</h5>
+                    <ul>
+                        <li><strong>Parcours structuré et cohérent :</strong> Acquisition progressive des compétences nécessaires.</li>
+                        <li><strong>Engagement accru des étudiants :</strong> Approches innovantes favorisant la participation active et l’assimilation.</li>
+                        <li><strong>Valorisation des compétences :</strong> Portfolios numériques renforçant l’employabilité des étudiants.</li>
+                        <li><strong>Adoption de Moodle :</strong> Utilisation intensive pour un accès facilité aux contenus et un suivi individualisé.</li>
+                    </ul>
+                `
+            },
+            
+            {
                 modalId: 'storylineModal',
                 title: 'Module interactif avec Storyline',
                 text: 'Création d\'un module d\'apprentissage interactif utilisant Articulate Storyline pour améliorer l\'engagement et la compréhension des étudiants.',
@@ -54,29 +86,7 @@ new Vue({
                 `
             },
             
-            {
-                modalId: 'amcModal',
-                title: 'Projet AMC',
-                text: 'Mise en place de la correction automatisée de QCM pour les examens papier, avec développement d\'outils en Python et VBA. Ce projet a permis de réduire le temps de correction de 45 jours par session.',
-                modalTitle: 'Projet AMC - Auto Multiple Choice',
-                modalContent: `
-                    <p>Auto Multiple Choice (AMC) est un logiciel open source facilitant la création, la gestion et la correction automatisée de QCM...</p>
-                    <h5>Étapes du projet</h5>
-                    <ul>
-                        <li><strong>Analyse des besoins :</strong> Identification des exigences pédagogiques et contraintes techniques.</li>
-                        <li><strong>Installation et configuration :</strong> Déploiement et paramétrage d'AMC selon les besoins spécifiques des utilisateurs.</li>
-                        <li><strong>Formation des utilisateurs :</strong> Création de tutoriels et organisation d’ateliers pratiques pour le personnel.</li>
-                        <li><strong>Automatisation :</strong> Développement de scripts en Python et VBA pour la génération de QCM et le traitement des résultats.</li>
-                        <li><strong>Support et maintenance :</strong> Assistance technique et mise à jour régulière pour assurer une utilisation optimale.</li>
-                    </ul>
-                    <h5>Résultats obtenus</h5>
-                    <ul>
-                        <li><strong>Efficacité accrue :</strong> Réduction significative du temps de correction des QCM.</li>
-                        <li><strong>Précision améliorée :</strong> Élimination des erreurs humaines, garantissant une évaluation juste des étudiants.</li>
-                        <li><strong>Satisfaction des utilisateurs :</strong> Retour positif des enseignants et des étudiants sur la rapidité et la fiabilité du processus.</li>
-                    </ul>
-                `
-            },
+            
             {
                 modalId: 'MoodleModal',
                 title: 'Création de tutoriels et formation sur Moodle',
@@ -96,38 +106,7 @@ new Vue({
                     </ul>
                 `
             },
-            {
-                modalId: 'pdfExcelModal',
-                title: 'Outils de traitement automatisé pour PDF et Excel',
-                text: 'Développement de scripts VBA et Python pour automatiser des actions en lots sur PDF et Excel, optimisant les tâches administratives et pédagogiques répétitives.',
-                modalTitle: 'Outils de traitement automatisé pour PDF et Excel',
-                modalContent: `
-                    <p>
-                        Ce projet a consisté à concevoir des scripts et outils personnalisés pour automatiser le traitement de fichiers PDF et Excel, afin de gagner en efficacité dans la gestion des documents administratifs et éducatifs. L’objectif était de simplifier des tâches répétitives, réduire les erreurs humaines, et libérer du temps pour des activités à forte valeur ajoutée.
-                    </p>
-                    <h5>Étapes clés du projet</h5>
-                    <ul>
-                        <li><strong>Analyse des besoins spécifiques :</strong> Identification des processus manuels avec PDF et Excel, et des besoins des utilisateurs en matière de traitement de données.</li>
-                        <li><strong>Développement de scripts en VBA et Python :</strong> Création de scripts pour automatiser le découpage de PDF, publipostage de notes, et importation en lot dans Apogée.</li>
-                        <li><strong>Personnalisation et tests :</strong> Ajustement des scripts pour répondre aux besoins spécifiques des utilisateurs et tests approfondis.</li>
-                       
-                        <li><strong>Support et maintenance continue :</strong> Assistance technique et mises à jour pour répondre aux nouvelles demandes.</li>
-                    </ul>
-                    <h5>Résultats obtenus</h5>
-                    <ul>
-                        <li><strong>Gain de temps significatif :</strong> Réduction considérable du temps consacré aux tâches de traitement de fichiers, notamment lors des examens.</li>
-                        <li><strong>Réduction des erreurs humaines :</strong> Automatisation des processus, pour éviter la saisie manuelle source principale d'erreur.</li>
-                        
-                    </ul>
-                    <h5>Exemples</h5>
-                    <ul>
-                        <li><strong>Génération des PV de Jury </strong> </li>
-                        <li><strong>Génération des Plannings</strong> </li>
-                        <li><strong>Exportation des notes vers Apogée</strong> </li>
-                        
-                    </ul>
-                `
-            },
+            
             {  modalId: 'videoHycare',
                 title: 'Vidéo Projet Hycare',
                 text: 'Capsules vidéos de vulgarisation et explications de concepts scientifiques en physiologie',
@@ -166,26 +145,56 @@ new Vue({
   
         techProjects: [
             {
-                modalId: 'alphaModal',
-                title: 'Projet Alpha',
-                text: 'Développement d\'une API en Node.js pour gérer des flux de données complexes avec une sécurité avancée.',
-                modalTitle: 'Projet Alpha - Développement d\'une API en Node.js',
+                modalId: 'pdfExcelModal',
+                title: 'Outils de traitement automatisé pour PDF et Excel',
+                text: 'Développement de scripts VBA et Python pour automatiser des actions en lots sur PDF et Excel, optimisant les tâches administratives et pédagogiques répétitives.',
+                modalTitle: 'Outils de traitement automatisé pour PDF et Excel',
                 modalContent: `
                     <p>
-                        Le Projet Alpha consiste en la création d'une API robuste en Node.js destinée à gérer des flux de données complexes tout en assurant un haut niveau de sécurité.
+                        Ce projet a consisté à concevoir des scripts et outils personnalisés pour automatiser le traitement de fichiers PDF et Excel, afin de gagner en efficacité dans la gestion des documents administratifs et éducatifs. L’objectif était de simplifier des tâches répétitives, réduire les erreurs humaines, et libérer du temps pour des activités à forte valeur ajoutée.
                     </p>
-                    <h5>Caractéristiques principales</h5>
+                    <h5>Étapes clés du projet</h5>
                     <ul>
-                        <li><strong>Gestion des flux de données :</strong> Mise en place de mécanismes efficaces pour traiter de grandes quantités de données en temps réel.</li>
-                        <li><strong>Sécurité avancée :</strong> Implémentation de protocoles de sécurité tels que OAuth2, JWT, et chiffrement des données sensibles.</li>
-                        <li><strong>Scalabilité :</strong> Architecture conçue pour s'adapter à une croissance rapide du volume de données et du nombre d'utilisateurs.</li>
+                        <li><strong>Analyse des besoins spécifiques :</strong> Identification des processus manuels avec PDF et Excel, et des besoins des utilisateurs en matière de traitement de données.</li>
+                        <li><strong>Développement de scripts en VBA et Python :</strong> Création de scripts pour automatiser le découpage de PDF, publipostage de notes, et importation en lot dans Apogée.</li>
+                        <li><strong>Personnalisation et tests :</strong> Ajustement des scripts pour répondre aux besoins spécifiques des utilisateurs et tests approfondis.</li>
+                       
+                        <li><strong>Support et maintenance continue :</strong> Assistance technique et mises à jour pour répondre aux nouvelles demandes.</li>
                     </ul>
-                    <h5>Technologies utilisées</h5>
+                    <h5>Résultats obtenus</h5>
                     <ul>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>MongoDB</li>
-                        <li>Redis</li>
+                        <li><strong>Gain de temps significatif :</strong> Réduction considérable du temps consacré aux tâches de traitement de fichiers, notamment lors des examens.</li>
+                        <li><strong>Réduction des erreurs humaines :</strong> Automatisation des processus, pour éviter la saisie manuelle source principale d'erreur.</li>
+                        
+                    </ul>
+                    <h5>Exemples</h5>
+                    <ul>
+                        <li><strong>Génération des PV de Jury </strong> </li>
+                        <li><strong>Génération des Plannings</strong> </li>
+                        <li><strong>Exportation des notes vers Apogée</strong> </li>
+                        
+                    </ul>
+                `
+            },{
+                modalId: 'amcModal',
+                title: 'Projet AMC',
+                text: 'Mise en place de la correction automatisée de QCM pour les examens papier, avec développement d\'outils en Python et VBA. Ce projet a permis de réduire le temps de correction de 45 jours par session.',
+                modalTitle: 'Projet AMC - Auto Multiple Choice',
+                modalContent: `
+                    <p>Auto Multiple Choice (AMC) est un logiciel open source facilitant la création, la gestion et la correction automatisée de QCM...</p>
+                    <h5>Étapes du projet</h5>
+                    <ul>
+                        <li><strong>Analyse des besoins :</strong> Identification des exigences pédagogiques et contraintes techniques.</li>
+                        <li><strong>Installation et configuration :</strong> Déploiement et paramétrage d'AMC selon les besoins spécifiques des utilisateurs.</li>
+                        <li><strong>Formation des utilisateurs :</strong> Création de tutoriels et organisation d’ateliers pratiques pour le personnel.</li>
+                        <li><strong>Automatisation :</strong> Développement de scripts en Python et VBA pour la génération de QCM et le traitement des résultats.</li>
+                        <li><strong>Support et maintenance :</strong> Assistance technique et mise à jour régulière pour assurer une utilisation optimale.</li>
+                    </ul>
+                    <h5>Résultats obtenus</h5>
+                    <ul>
+                        <li><strong>Efficacité accrue :</strong> Réduction significative du temps de correction des QCM.</li>
+                        <li><strong>Précision améliorée :</strong> Élimination des erreurs humaines, garantissant une évaluation juste des étudiants.</li>
+                        <li><strong>Satisfaction des utilisateurs :</strong> Retour positif des enseignants et des étudiants sur la rapidité et la fiabilité du processus.</li>
                     </ul>
                 `
             },
