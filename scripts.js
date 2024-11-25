@@ -251,18 +251,4 @@ addParticles();
 
 })
 
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    (function(){
-        emailjs.init("fotlHqNHwoK-llHiF"); // Remplacez "YOUR_USER_ID" par votre ID EmailJS
-    })();
 
-    function sendMail(event) {
-        event.preventDefault();
-        const serviceID = 'service_3rz1sh7';
-        const templateID = 'template_54v1yqb'; // Remplacez par votre ID de modèle EmailJS
-
-        emailjs.sendForm(serviceID, templateID, event.target)
-            .then(() => alert("Message envoyé avec succès!"), (err) => alert(JSON.stringify(err)));
-    }
-</script>
