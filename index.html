@@ -20,6 +20,20 @@
       });
    })();
 </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
 <!-- Sticky Header -->
@@ -225,12 +239,22 @@
     </div>
 </div>
 
-
+<form id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+</form>
     
 <!-- Contact Section -->
 <section id="contact" class="container my-5">
     <h2 class="text-center">Contact</h2>
-    <form id="contact-form">
+    <!--<form id="contact-form">
 
         <div class="form-group">
             <label for="name">Votre Nom</label>
@@ -245,8 +269,8 @@
             <textarea class="form-control" id="message" rows="3" name="message" required></textarea>
         </div>
         <button type="submit" class="btn">Envoyer</button>
-    </form>
-    <div id="status" class="mt-3"></div>
+</form>
+    <div id="status" class="mt-3"></div>-->
 </section>
 
 <!-- Footer -->
