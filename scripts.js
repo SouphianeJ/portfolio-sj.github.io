@@ -1,4 +1,29 @@
-// Animation for the timeline items
+
+  // Initialisation de EmailJS avec ta clé publique
+  (function(){
+      emailjs.init("fotlHqNHwoK-llHiF"); // Remplace "YOUR_PUBLIC_KEY" par ta clé publique
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Empêche le rechargement de la page
+
+      // Données du formulaire
+      const formData = {
+          name: this.name.value,
+          email: this.email.value,
+          message: this.message.value
+      };
+
+      // Envoi des données via EmailJS
+      emailjs.send("service_3rz1sh7", "template_54v1yqb", formData)
+          .then(function(response) {
+              console.log("SUCCESS!", response.status, response.text);
+              document.getElementById('status').innerText = "Message envoyé avec succès !";
+          }, function(error) {
+              console.log("FAILED...", error);
+              document.getElementById('status').innerText = "Échec de l'envoi du message.";
+          });
+  });
 document.addEventListener("DOMContentLoaded", function() {
     const timelineItems = document.querySelectorAll(".timeline-item");
 
