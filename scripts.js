@@ -1,7 +1,7 @@
 
   // Initialisation de EmailJS avec ta clé publique
   (function(){
-      emailjs.init("fotlHqNHwoK-llHiF"); // Remplace "YOUR_PUBLIC_KEY" par ta clé publique
+      emailjs.init("NhW_jF2ZV7q2sGhfA"); // Remplace "YOUR_PUBLIC_KEY" par ta clé publique
   })();
 
   document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -15,7 +15,7 @@
       };
 
       // Envoi des données via EmailJS
-      emailjs.send("service_3rz1sh7", "template_54v1yqb", formData)
+      emailjs.send("service_8pa7eue", "template_0zf4nxa", formData)
           .then(function(response) {
               console.log("SUCCESS!", response.status, response.text);
               document.getElementById('status').innerText = "Message envoyé avec succès !";
