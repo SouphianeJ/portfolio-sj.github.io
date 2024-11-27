@@ -13,27 +13,7 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "NhW_jF2ZV7q2sGhfA",
-      });
-   })();
-</script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_8pa7eue', 'template_0zf4nxa', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+
 </head>
 <body>
 <!-- Sticky Header -->
@@ -100,23 +80,28 @@
   </svg>
 </div>
 <section id="about">
-<div class="container prompt-container">
-    <div class="row justify-content-center mt-1">
-        <div class="col-12 text-center">
-            <div class="prompt-box">
-                <span id="prompt-text"></span>
+    <div class="container prompt-container">
+        <!-- Zone de prompt -->
+        <div class="row justify-content-center mt-1">
+            <div class="col-12 text-center">
+                <div class="prompt-box">
+                    <span id="prompt-text">Fais une description de moi !</span>
+                    <button id="send-button" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Envoyer
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Zone de réponse -->
+        <div class="row justify-content-center mt-1">
+            <div class="col-12 text-center">
+                <div class="response-box" id="response-box">
+                    <span id="loading-dots"></span>
+                    <span id="response-text" style="display: none;"></span>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row justify-content-center mt-1">
-         <div class="col-12 text-center">
-            <div class="response-box" id="response-box">
-                <span id="loading-dots"></span>
-                <span id="response-text"></span>
-            </div>
-        </div>
-    </div>
-</div>    
 </section>
 <!-- Experience Section -->
 <section id="experience" class="py-5">

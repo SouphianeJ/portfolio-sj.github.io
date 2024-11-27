@@ -182,10 +182,9 @@ header p {
 /* Conteneur pour centrer les boîtes */
 .prompt-container {
     display: flex;
-    flex-direction: column; /* Empile les éléments verticalement */
-    align-items: center; /* Centre horizontalement */
-    justify-content: center; /* Centre verticalement */
-   /* min-height: 100vh; *//* Prend toute la hauteur de la page */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Styles de la boîte de prompt */
@@ -202,11 +201,35 @@ header p {
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 10px;
-    margin-left: 1px;
-    margin-right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Styles de la boîte de réponse dans .prompt-container */
+/* Bouton Envoyer */
+.prompt-container .prompt-box button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    font-size: 1em;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prompt-container .prompt-box button i {
+    margin-right: 5px;
+}
+
+.prompt-container .prompt-box button:hover {
+    background-color: var(--dark-primary);
+}
+
+/* Styles de la boîte de réponse */
 .prompt-container .response-box {
     width: 100vw;
     max-width: 600px;
@@ -217,26 +240,14 @@ header p {
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     color: var(--primary);
-    margin-left: 1px;
-    margin-right: 1px;
-    display: none; /* Cacher la réponse au début */
+    display: none; /* Masquer au début */
 }
 
-/* Texte du prompt avec effet d'écriture dans .prompt-container */
-.prompt-container #prompt-text {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid rgba(0, 0, 0, 0.75);
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-}
-
-/* Animation des trois petits points dans .prompt-container */
+/* Animation des trois petits points */
 .prompt-container #loading-dots {
     display: inline-block;
     font-size: 1.2em;
     color: var(--primary);
-    margin-right: 5px;
 }
 
 .prompt-container #loading-dots::after {
@@ -262,18 +273,6 @@ header p {
     }
 }
 
-/* Animation d'écriture */
-@keyframes typing {
-   /* Not working
-    from { width: 0; }
-    to { width: 100%; }*/
-}
-
-/* Animation du curseur clignotant */
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: rgba(0, 0, 0, 0.75); }
-}
 
 
 .btn-cv {

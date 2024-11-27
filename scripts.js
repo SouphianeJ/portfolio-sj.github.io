@@ -1,29 +1,3 @@
-
-  // Initialisation de EmailJS avec ta clé publique
-  (function(){
-      emailjs.init("NhW_jF2ZV7q2sGhfA"); // Remplace "YOUR_PUBLIC_KEY" par ta clé publique
-  })();
-
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Empêche le rechargement de la page
-
-      // Données du formulaire
-      const formData = {
-          name: this.name.value,
-          email: this.email.value,
-          message: this.message.value
-      };
-
-      // Envoi des données via EmailJS
-      emailjs.send("service_8pa7eue", "template_0zf4nxa", formData)
-          .then(function(response) {
-              console.log("SUCCESS!", response.status, response.text);
-              document.getElementById('status').innerText = "Message envoyé avec succès !";
-          }, function(error) {
-              console.log("FAILED...", error);
-              document.getElementById('status').innerText = "Échec de l'envoi du message.";
-          });
-  });
 document.addEventListener("DOMContentLoaded", function() {
     const timelineItems = document.querySelectorAll(".timeline-item");
 
@@ -41,45 +15,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 //chat gpt style prompt
-document.addEventListener("DOMContentLoaded", function() {
-    const promptText = "Fais une description de moi !";
-    const responseText = "Ingénieur pédagogique avec plus de 5 ans d’expérience, j’ai pu construire mon expertise pluridisciplinaire autour de la transformation numérique, la pédagogie et l'accompagnement au changement.\n J'analyse le travail des équipes pédagogiques pour optimiser leurs pratiques, en prenant en compte aussi bien les processus que les outils. Mon objectif est d’intégrer des solutions efficaces, pédagogiques ou techniques, pour faciliter toute la chaîne.";
-    const promptElement = document.getElementById("prompt-text");
-    const responseElement = document.getElementById("response-text");
-    const responseBox = document.getElementById("response-box");
-    const loadingDots = document.getElementById("loading-dots");
-    let index = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const responseText =
+      "Ingénieur pédagogique avec plus de 5 ans d’expérience, j’ai pu construire mon expertise pluridisciplinaire autour de la transformation numérique, la pédagogie et l'accompagnement au changement.\n J'analyse le travail des équipes pédagogiques pour optimiser leurs pratiques, en prenant en compte aussi bien les processus que les outils. Mon objectif est d’intégrer des solutions efficaces, pédagogiques ou techniques, pour faciliter toute la chaîne.";
+  const responseElement = document.getElementById("response-text");
+  const responseBox = document.getElementById("response-box");
+  const loadingDots = document.getElementById("loading-dots");
+  const sendButton = document.getElementById("send-button");
 
-    function typeWriter() {
-        if (index < promptText.length) {
-            promptElement.innerHTML += promptText.charAt(index);
-            index++;
-            setTimeout(typeWriter, 125);
-            setTimeout(showLoadingDots, 125);
-        } else {
-            // Show the response
-            setTimeout(showResponseElement, 1000);
-        }
-    }
+  sendButton.addEventListener("click", function () {
+      sendButton.disabled = true; // Désactiver le bouton après le clic
+      responseBox.style.display = "block"; // Montrer la boîte de réponse
+      loadingDots.style.display = "inline-block"; // Afficher les points de chargement
 
-    function showLoadingDots() {
-        responseBox.style.display = "block";
-        loadingDots.style.display = "inline-block"; // Show loading dots
-            
-    }
-
-    function showResponseElement() {
-
-        // Hide the loading dots after 1.5 seconds and show the response
-        setTimeout(function() {
-            loadingDots.style.display = "none"; // Hide loading dots
-            responseElement.style.display = "inline-block"; // Show the response text
-            responseElement.textContent = responseText;
-        }, 1500);
-    }
-
-    typeWriter();
+      // Simuler un délai avant de montrer la réponse
+      setTimeout(function () {
+          loadingDots.style.display = "none"; // Cacher les points de chargement
+          responseElement.style.display = "inline-block"; // Afficher le texte de réponse
+          responseElement.textContent = responseText;
+      }, 1500); // Délai de 1,5 secondes
+  });
 });
+
 
 
 
