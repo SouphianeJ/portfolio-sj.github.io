@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
 //chat gpt style prompt
 document.addEventListener("DOMContentLoaded", function () {
   const responseText =
-      "Ingénieur pédagogique avec plus de 5 ans d’expérience, j’ai pu construire mon expertise pluridisciplinaire autour de la transformation numérique, la pédagogie et l'accompagnement au changement.\n J'analyse le travail des équipes pédagogiques pour optimiser leurs pratiques, en prenant en compte aussi bien les processus que les outils. Mon objectif est d’intégrer des solutions efficaces, pédagogiques ou techniques, pour faciliter toute la chaîne.";
+      `Ingénieur pédagogique avec plus de 5 ans d’expérience, j’ai pu construire mon expertise pluridisciplinaire autour de la transformation numérique, la pédagogie et l'accompagnement au changement.<br> 
+      J'analyse le travail des équipes pédagogiques pour optimiser leurs pratiques, en prenant en compte aussi bien les processus que les outils. <br>
+      Mon objectif est d’intégrer des solutions efficaces, pédagogiques ou techniques, pour faciliter toute la chaîne.`;
   const responseElement = document.getElementById("response-text");
   const responseBox = document.getElementById("response-box");
   const loadingDots = document.getElementById("loading-dots");
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
           loadingDots.style.display = "none"; // Cacher les points de chargement
           responseElement.style.display = "inline-block"; // Afficher le texte de réponse
-          responseElement.textContent = responseText;
+          responseElement.innerHTML = responseText;
       }, 1500); // Délai de 1,5 secondes
   });
 });

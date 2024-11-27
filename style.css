@@ -226,7 +226,8 @@ header p {
 }
 
 .prompt-container .prompt-box button:hover {
-    background-color: var(--dark-primary);
+    background-color: var(--secondary-deep);
+    color: var(--primary);
 }
 
 /* Styles de la boîte de réponse */
@@ -241,6 +242,7 @@ header p {
     font-size: 1.2em;
     color: var(--primary);
     display: none; /* Masquer au début */
+    text-align: justify;
 }
 
 /* Animation des trois petits points */
