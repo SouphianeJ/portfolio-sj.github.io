@@ -237,14 +237,15 @@ new Vue({
                 modalTitle: 'Développement et déploiement de la plateforme Resamat',
                 modalContent: `
                     <p>
-                        Ce projet avait pour objectif de développer et de déployer la plateforme Resamat, une solution en ligne permettant aux enseignants, étudiants et personnels de l’Université Paris-Saclay de gérer la réservation de ressources pédagogiques (salles de cours, matériel spécifique, équipements scientifiques). Conçue en PHP avec une base de données SQL, Resamat offre une interface intuitive pour centraliser la gestion des ressources et prévenir les conflits de réservation.
+                        Ce projet avait pour objectif de développer et de déployer la plateforme Resamat, une solution en ligne permettant aux enseignants, étudiants et personnels de l’Université Paris-Saclay de gérer la réservation de ressources pédagogiques (salles de cours, matériel spécifique, équipements scientifiques). 
+                        <br>Conçue en PHP avec une base de données SQL, Resamat offre une interface intuitive pour centraliser la gestion des ressources et prévenir les conflits de réservation.
                     </p>
                     
                     <h5>Étapes clés du projet</h5>
                     <ul>
-                        <li><strong>1. Analyse des besoins et spécifications techniques :</strong> Identification des besoins spécifiques des utilisateurs pour définir les fonctionnalités essentielles, telles que les règles de réservation, les restrictions d’accès, et les droits des utilisateurs.</li>
+                        <li><strong>1. Analyse des besoins et spécifications techniques :</strong> Besoins spécifiques des utilisateurs pour définir les fonctionnalités essentielles : règles de réservation (qui autorise, qui est responsable), les restrictions d’accès, et les droits des utilisateurs.</li>
                         
-                        <li><strong>2. Développement backend en PHP et SQL avec sécurité renforcée :</strong>
+                        <li><strong>2. Développement backend en PHP et SQL avec sécurité car identification gérée sur la plateforme :</strong>
                             <ul>
                                 <li>Création d’une structure de base de données en SQL pour stocker les informations relatives aux ressources, utilisateurs et réservations.</li>
                                 <li>Stockage sécurisé des éléments d’authentification : Mise en place d’un système de stockage hashé des identifiants et mots de passe des utilisateurs pour garantir la sécurité des données.</li>
@@ -259,7 +260,7 @@ new Vue({
                             </ul>
                         </li>
                         
-                        <li><strong>4. Suivi des emprunts et processus d’acceptation :</strong>
+                        <li><strong>4. Suivi des emprunts et établir un processus d’acceptation :</strong>
                             <ul>
                                 <li>Suivi détaillé des emprunts de matériels, avec un historique des utilisateurs et des équipements.</li>
                                 <li>Processus de validation par e-mail : Après une demande de réservation, un e-mail est automatiquement envoyé au responsable du matériel pour validation. Une fois approuvé, l’utilisateur reçoit une notification par e-mail confirmant la réservation.</li>
@@ -272,12 +273,12 @@ new Vue({
                             </ul>
                         </li>
                         
-                        <li><strong>6. Formation des utilisateurs et documentation technique :</strong> Rédaction de guides d’utilisation pour les utilisateurs finaux et de documentation technique pour les administrateurs, avec des sessions de formation pour assurer une prise en main rapide de la plateforme.</li>
+                        <li><strong>6. Formation des utilisateurs :</strong> L'UX a été pensée pour ne pas nécessairement avoir besoin d'une formation ; qui a besoin d'une formation pour faire ses réservations ou achats sur Amazon ?</li>
                     </ul>
                     
                     <h5>Résultats obtenus</h5>
                     <ul>
-                        <li><strong>Optimisation de la gestion des ressources :</strong> La structure en SQL et les règles de gestion en PHP ont permis d’optimiser l’utilisation des ressources pédagogiques, en évitant les doubles réservations et en assurant un suivi précis de l’occupation des équipements.</li>
+                        <li><strong>Optimisation de la gestion des ressources :</strong> La structure en SQL et les règles de gestion en PHP ont permis de suivre les réservations, réduire les vols et d’éviter les doubles réservations.</li>
                         <li><strong>Amélioration de l’efficacité et gain de temps :</strong> Grâce aux fonctionnalités de gestion avancée et à l’automatisation du processus de réservation et de validation, les utilisateurs ont pu accéder rapidement aux ressources sans interventions manuelles répétitives.</li>
                         <li><strong>Retour positif et adoption généralisée :</strong> La flexibilité et l’efficacité de Resamat ont encouragé une large adoption parmi les enseignants et étudiants, avec des retours positifs sur la simplicité et la performance de l’interface.</li>
                     </ul>
@@ -289,6 +290,30 @@ new Vue({
             }
             // Vous pouvez ajouter d'autres projets techniques ici
         ],
+        mycompetencies: [
+            {
+                modalId: 'needsanalisys',
+                title: 'Recueil, analyse et redéfinition du besoin en projet',
+                text: 'Concertation et animation de réunions',
+                modalTitle: 'Recueil, analyse et redéfinition du besoin en projet',
+                modalContent: `
+                    <p>Il s'agit de poser les bonnes bases pour mener à bien un projet. Il est également essentiel d'identifier les éventuels points blocants</p>
+                    
+                    
+                `
+            },
+            {
+                modalId: 'establishprocess',
+                title: 'Etablir des process',
+                text: 'comme parttout il est indispensable de rédiger des process',
+                modalTitle: 'Etablir des process',
+                modalContent: `
+                    <p>comme parttout il est indispensable de rédiger des process</p>
+                    
+                    
+                `
+            }
+        ]
     },
     methods: {
         openModal(modalId) {
