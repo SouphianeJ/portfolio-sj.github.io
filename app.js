@@ -65,7 +65,12 @@ Vue.component("slideshow", {
 
 
 new Vue({
-    el: '#app',
+  el: "#slideshow-app",
+});
+
+
+new Vue({
+    el: '#modal-app',
     data: {
         pedaproject: [
             {
