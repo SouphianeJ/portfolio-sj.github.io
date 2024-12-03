@@ -10,10 +10,11 @@ Vue.component("slideshow", {
       <div class="slide">
         <h2>{{ skills[currentSlide].title }}</h2>
         <p>{{ skills[currentSlide].text }}</p>
+        <div v-if="showDetails" v-html="skills[currentSlide].modalContent"></div>
         <button class="details-button" @click="showDetails = !showDetails">
           {{ showDetails ? "Masquer les détails" : "Voir les détails" }}
         </button>
-        <div v-if="showDetails" v-html="skills[currentSlide].modalContent"></div>
+        
       </div>
 
       <!-- Flèche droite -->
