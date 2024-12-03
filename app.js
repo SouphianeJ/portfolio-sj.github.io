@@ -28,22 +28,47 @@ Vue.component("slideshow", {
       currentSlide: 0,
       showDetails: false,
       skills: [
-        {
-          title: "Évaluer un dispositif pédagogique",
-          text: "Analyser et améliorer l'efficacité pédagogique.",
-          modalContent: "<p>Évaluation basée sur des indicateurs mesurables.</p>",
-        },
-        {
-          title: "Structurer des processus",
-          text: "Simplifier et optimiser des flux pédagogiques.",
-          modalContent: "<p>Structure claire et documentée des processus.</p>",
-        },
-        {
-          title: "Création de vidéos pédagogiques",
-          text: "Produire des contenus visuels pour faciliter l'apprentissage.",
-          modalContent: "<p>Utilisation d'outils comme Rapidmooc et Camtasia.</p>",
-        },
-      ],
+  {
+    title: "Évaluer un dispositif pédagogique ou technique",
+    text: "Analyser, mesurer et améliorer les dispositifs pédagogiques ou techniques.",
+    modalContent: `
+      <p>Évaluer les dispositifs pour vérifier leur efficacité, leur pertinence et leur satisfaction auprès des utilisateurs.</p>
+      <ul>
+        <li>Recueillir des données qualitatives et quantitatives auprès des utilisateurs (apprenants, enseignants, administrateurs).</li>
+        <li>Analyser la performance et la satisfaction via des indicateurs clés adaptés.</li>
+        <li>Proposer des améliorations basées sur les retours utilisateurs et les observations.</li>
+        <li>Mettre en œuvre une démarche itérative pour l'amélioration continue.</li>
+      </ul>
+    `,
+  },
+  {
+    title: "Structurer des processus pédagogiques et techniques",
+    text: "Analyser et simplifier des processus pour une meilleure durabilité et efficacité.",
+    modalContent: `
+      <p>Structurer les processus pédagogiques et techniques en prenant en compte les utilisateurs et le contexte.</p>
+      <ul>
+        <li>Simplifier et documenter les processus pour garantir leur robustesse et leur accessibilité.</li>
+        <li>Collaborer avec des équipes pluridisciplinaires pour une approche intégrée.</li>
+        <li>Identifier et résoudre les points de blocage pour fluidifier les flux.</li>
+        <li>Tenir compte des contraintes pédagogiques, techniques et organisationnelles.</li>
+      </ul>
+    `,
+  },
+  {
+    title: "Former et accompagner les utilisateurs dans la prise en main de solutions numériques",
+    text: "Assurer une adoption réussie des outils numériques par les utilisateurs.",
+    modalContent: `
+      <p>Accompagner les utilisateurs pour garantir une adoption fluide et efficace des outils numériques mis à leur disposition.</p>
+      <ul>
+        <li>Analyser les besoins et niveaux de compétence des utilisateurs pour personnaliser la formation.</li>
+        <li>Concevoir et dispenser des formations adaptées aux contextes pédagogiques et techniques.</li>
+        <li>Créer des supports pédagogiques clairs et accessibles (guides, tutoriels, vidéos).</li>
+        <li>Offrir un accompagnement continu et une assistance technique en cas de difficulté.</li>
+        <li>Évaluer l’efficacité des formations et ajuster les contenus en fonction des retours utilisateurs.</li>
+      </ul>
+    `,
+  },
+],
     };
   },
   methods: {
