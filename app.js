@@ -8,28 +8,36 @@ new Vue({
                 text: 'Conception et animation d’un programme pédagogique innovant intégrant classe inversée, jeux de rôle et portfolios numériques.',
                 modalTitle: 'Programme pédagogique en informatique et gestion de projet',
                 modalContent: `
-                    <p>Ce projet consistait à concevoir et animer un programme pédagogique structuré pour des licences en éducation et en management, en collaboration avec le responsable informatique et d’autres intervenants. L’objectif était de fournir un parcours de formation cohérent en informatique (bureautique avancée) et en gestion de projet, tout en intégrant des approches innovantes comme la classe inversée, la correction par les pairs et les jeux de rôle pédagogiques.</p>
+                    <p>L'ILEPS forme des enseignants et des managers ainsi que des Licences Pro Commerce. Il était indispensable d'établir un programme pédagogique en informatique (bureautique avancée) et gestion de projet pour répondre à leurs besoins spécifiques.
+                    <br>Cela, en collaboration avec le responsable informatique et d’autres intervenants. L’objectif était de tenter également d'intégrer des approches innovantes comme la classe inversée, la correction par les pairs et les jeux de rôle pédagogiques.</p>
                     
-                    <h5>Étapes clés du projet</h5>
+                    <h5>Points clés du projet</h5>
                     <ul>
-                        <li><strong>Conception du programme pédagogique :</strong> Définition des compétences clés, structuration des parcours de formation pour une progression cohérente des compétences.</li>
-                        <li><strong>Révision du socle commun en bureautique :</strong>
-                            <ul>
-                                <li>Intégration de la correction par les pairs dans les exercices pratiques.</li>
-                                <li>Mise en place de la classe inversée, avec des supports numériques accessibles sur Moodle.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Cours de gestion de projet sous forme de jeu de rôle :</strong> Scénario fictif pour simuler des environnements réels, avec répartition des rôles et gestion des délais.</li>
-                        <li><strong>Portfolio de projet pour les licences 3 :</strong> Introduction de portfolios numériques pour documenter les projets et valoriser les réalisations.</li>
+                        <li><strong>Conception du programme pédagogique :</strong> Définir des compétences clés suivant les formations, structuration des parcours de formation pour une progression cohérente des compétences.</li>
+                        <li><strong>Révision /Etablir un socle commun en bureautique</strong> (choix que tous les L1 suivent le même programme) :                              
+                        <li><strong>Intégration de la correction par les pairs </strong>dans les exercices pratiques. 
+                                <br><strong>Séance type en L1 :</strong>
+                                <ol style="padding-left:15px;">
+                                    <li>travail commencé en classe,</li>
+                                    <li>terminé chez soi avec supports numériques accessibles sur Moodle pdf et vidéos,</li>
+                                    <li>corrigé par les pairs en début de cours,</li>
+                                    <li>puis questions et approfondir cours théorique et on recommence</li>
+                                </ol>
+                        </li>                       
+                        <li><strong>Cours de gestion de projet sous forme de jeu de rôle :</strong> Scénario fictif pour simuler des contraintes et livrables réels, avec répartition des rôles (chef, resp. qualité, resp. comm) et gestion des délais.</li>
+                        <li><strong>Portfolio de compétence pour les licences 2 éducation:</strong> Portfolios numériques où ils définissent une compétence de l'enseignant et se positionnnent en apportant des preuves de leur niveau.</li>
+                        <li><strong>Portfolio de projet pour les licences 3 Pro:</strong> Portfolios numériques sous forme de site web.</li>
+                        <li><strong>Excel Avancé pour les licences 3 Management</strong></li>
                         <li><strong>Collaboration et mise en ligne des contenus :</strong> Coordination avec les intervenants, mise en ligne des contenus sur Moodle, et suivi des étudiants.</li>
                     </ul>
                     
                     <h5>Résultats obtenus</h5>
                     <ul>
-                        <li><strong>Parcours structuré et cohérent :</strong> Acquisition progressive des compétences nécessaires.</li>
-                        <li><strong>Engagement accru des étudiants :</strong> Approches innovantes favorisant la participation active et l’assimilation.</li>
-                        <li><strong>Valorisation des compétences :</strong> Portfolios numériques renforçant l’employabilité des étudiants.</li>
-                        <li><strong>Adoption de Moodle :</strong> Utilisation intensive pour un accès facilité aux contenus et un suivi individualisé.</li>
+                        <li><strong>Parcours structuré et cohérent :</strong> Meilleure adéquation et satisfaction des étudiants vis à vis des contenus enseignés.</li>
+                        <li><strong>Engagement accru des étudiants :</strong> Taux de rendu amélioré via la correction par les pairs</li>
+                        <li><strong>Valorisation des compétences :</strong> Portfolios numériques renforcent la professionnalisation et l’employabilité des étudiants.</li>
+                        <li><strong>Moodle :</strong> Utilisation pratique mais fasitdieuse pour le paramétrage des modules Atelier (correction par les pairs).</li>
+                        <li><strong>Ecarts :</strong> Tendance à creuser les écarts de niveaux bons très bons et moins bons,moins bons avec plus d'autonomie et l'évaluation par les pairs.</li>
                     </ul>
                 `
             },
