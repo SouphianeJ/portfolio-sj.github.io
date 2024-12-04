@@ -44,26 +44,24 @@ new Vue({
             
             {
                 modalId: 'storylineModal',
-                title: 'Module interactif avec Storyline',
-                text: 'Création d\'un module d\'apprentissage interactif utilisant Articulate Storyline pour améliorer l\'engagement et la compréhension des étudiants.',
+                title: 'Module tutoriel vidéo interactif avec Storyline',
+                text: 'Création d\'un module tutoriel interactif utilisant Articulate Storyline pour prendre en main une plateforme.',
                 modalTitle: 'Création d\'un module interactif avec Storyline',
                 modalContent: `
-                    <p>Ce projet consistait à développer un module d'apprentissage interactif en utilisant le logiciel <strong>Articulate Storyline</strong>. L'objectif était de créer une ressource pédagogique dynamique pour les étudiants, leur permettant d'interagir avec le contenu et d'améliorer leur compréhension de sujets complexes.</p>
+                    <p>Ce projet consistait à développer un module interactif guidé pour faire manipuler la plateforme Jupyter aux étudiants grâce à <strong>Articulate Storyline</strong>. L'objectif était de créer l'engagement sans faire face à l'apparente complexité de la plateforme pour des étudiants non familier de la programmation ni du langage Markdown.</p>
                     
                     <h5>Étapes clés du projet</h5>
                     <ul>
-                        <li><strong>Analyse des besoins pédagogiques :</strong> Collaboration avec les enseignants pour identifier les sujets nécessitant une approche interactive afin de faciliter l'apprentissage.</li>
-                        <li><strong>Conception du storyboard :</strong> Élaboration d'un storyboard détaillé pour structurer le contenu du module, définir les interactions et prévoir les éléments multimédias à intégrer.</li>
-                        <li><strong>Développement du module avec Storyline :</strong> Utilisation d'Articulate Storyline pour créer le module interactif, en intégrant des quiz, des animations, des scénarios et des feedbacks personnalisés.</li>
-                        <li><strong>Tests et ajustements :</strong> Réalisation de tests utilisateurs avec un groupe d'étudiants pour recueillir des retours et apporter les ajustements nécessaires afin d'optimiser l'efficacité pédagogique du module.</li>
-                        <li><strong>Intégration dans le LMS eCampus :</strong> Publication du module au format compatible SCORM pour une intégration transparente dans la plateforme eCampus, permettant un suivi des progrès des étudiants.</li>
+                        <li><strong>Analyse des besoins pédagogiques :</strong> Observation et discussions pour identifier les étapes nécessitant une approche interactive afin de faciliter la prise en main.</li>
+                        <li><strong>Conception du storyboard :</strong> Élaboration d'un storyboard simple</li>
+                        <li><strong>Développement du module avec Storyline :</strong> Utilisation d'Articulate Storyline pour filmer les actions et créer le module interactif, en intégrant un chemin, des scénarios et des feedbacks personnalisés.</li>
+                        <li><strong>Tests et ajustements :</strong> Réalisation de tests utilisateurs avec un groupe d'étudiants pour recueillir des retours et apporter les ajustements nécessaires afin d'optimiser le module.</li>
+                        <li><strong>Intégration dans le LMS eCampus :</strong> Publication du module au format compatible SCORM pour une intégration dans la plateforme eCampus.</li>
                     </ul>
                     
                     <h5>Résultats obtenus</h5>
                     <ul>
-                        <li><strong>Amélioration de l'engagement des étudiants :</strong> Le module interactif a favorisé une participation active des étudiants, rendant l'apprentissage plus attractif.</li>
-                        <li><strong>Renforcement de la compréhension :</strong> Les interactions et feedbacks ont permis aux étudiants de mieux assimiler les concepts, avec une amélioration notable des résultats aux évaluations.</li>
-                        <li><strong>Reproductibilité du modèle :</strong> Le succès du module a encouragé le développement d'autres ressources interactives dans différentes disciplines.</li>
+                        <li>L'utilisation du module était simple et efficace, mais le temps de création (long) du module et sa plus-value réelle restent à prouver. Peut-être un simple tutoriel vidéo aurait pu suffir.</li>
                     </ul>
                 `
             },
@@ -71,18 +69,20 @@ new Vue({
             {
                 modalId: 'spocsModal',
                 title: 'Développement de SPOCs',
-                text: 'Conception et déploiement de Small Private Online Courses (SPOCs) pour répondre aux besoins pédagogiques spécifiques de l\'Université Paris-Saclay.',
+                text: 'Conception et déploiement de Small Private Online Courses (SPOCs).',
                 modalTitle: 'Développement de SPOCs pédagogiques',
                 modalContent: `
-                    <p>Ce projet avait pour objectif de concevoir et développer des SPOCs (Small Private Online Courses) pour répondre aux besoins pédagogiques spécifiques de l’Université Paris-Saclay. Ces formations en ligne, accessibles à un groupe restreint d’utilisateurs, ont été utilisées pour accompagner les étudiants dans leurs apprentissages et pour former les enseignants à de nouvelles méthodes pédagogiques. Les SPOCs offraient des contenus multimédias interactifs, des exercices d’évaluation et des ressources pédagogiques adaptées.</p>
+                    <p>J'ai été impliqué dans la création de plusieurs SPOCs (Small Private Online Courses) sur Moodle, pour répondre aux besoins pédagogiques des formations et de l'hybridation.
+                    <br>A Paris-Saclay notamment pour mettre en place l'examen final (pour plus de 2000 étudiants). Ou encore à l'ILEPS cette fois en les concevant de A à Z en collaboration avec les enseignants.</p>
                     
                     <h5>Étapes clés du projet</h5>
                     <ul>
-                        <li><strong>Analyse des besoins pédagogiques :</strong> Identification des objectifs de chaque SPOC en collaboration avec les enseignants et responsables pédagogiques. Chaque SPOC a été conçu pour répondre à des besoins précis, tels que l’apprentissage d’un logiciel spécifique ou la préparation à des évaluations.</li>
-                        <li><strong>Création de contenus multimédias :</strong> Développement de vidéos, de tutoriels interactifs et de supports pédagogiques adaptés aux thématiques des SPOCs. Des formats variés ont été utilisés pour maximiser l’engagement et l’apprentissage des participants.</li>
-                        <li><strong>Structuration des cours et intégration dans la plateforme :</strong> Organisation des SPOCs en modules et parcours progressifs, avec intégration des contenus dans la plateforme eCampus via des outils d’édition compatibles (SCORM, LTI).</li>
-                        <li><strong>Conception d’évaluations interactives :</strong> Mise en place d’exercices et de quiz pour évaluer les progrès des participants, avec des retours automatisés pour renforcer leur apprentissage.</li>
-                        <li><strong>Formation et accompagnement des enseignants :</strong> Organisation de sessions de formation pour aider les enseignants à concevoir leurs propres SPOCs et à utiliser efficacement les outils numériques pour leurs cours.</li>
+                        <li><strong>Analyse des besoins pédagogiques :</strong> Identification des objectifs de chaque SPOC en collaboration avec les enseignants et responsables pédagogiques. Chaque SPOC a été conçu pour répondre à des besoins précis, tels que la préparation à l'ORAL 3 ou l'Ecrit 1 & 2 du CAPEPS/ Agrégation.</li>
+                        <li><strong>Création de contenus multimédias :</strong> Vidéos pédagogiques, supports pédagogiques adaptés et scénarisation thématique. Des formats variés ont été utilisés pour maximiser l’engagement et l’apprentissage des participants.</li>
+                        <li><strong>Structuration des cours et intégration dans la plateforme :</strong> Organisation des SPOCs en modules et parcours progressifs, avec intégration des contenus dans la plateforme Moodle et des quizz permettant de déverouiller l'accès à la suite du contenu.</li>
+                        <li><strong>Suivi et Evaluations :</strong> Mise en place d’un suivi et d'une évaluation QCM finale en plus des QCM formatifs.</li>
+                        <li><strong>Formation et accompagnement des enseignants :</strong> Accompagnement des enseignants pour leur permettre de suivre les étudiants.</li>
+                        <li><strong>Amélioration continue :</strong> Mise en place d'un QCM feedback des étudiants pour connaitre leur ressenti et améliorer le SPOC (répondre au QCM débloque un bêtisier des vidéos pédagogiques).</li>
                     </ul>
                     
                     <h5>Résultats obtenus</h5>
