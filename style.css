@@ -468,6 +468,30 @@ h2 {
     }
 }
 
+/* Slide Details - Contenu conditionnel */
+.slide-details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid var(--light-gblue); /* Bordure légère */
+    border-radius: 8px;
+    background-color: var(--light-gray);
+    color: var(--primary);
+    font-size: 1rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+  }
+  
+  /* Lorsque showDetails est vrai */
+  .slide-details.show {
+    opacity: 1;
+    max-height: 500px; /* Ajustez selon la hauteur du contenu */
+  }
+  
+  
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .slideshow-container {
@@ -490,6 +514,11 @@ h2 {
         font-size: 0.9rem;
         padding: 8px 12px;
     }
+    .slide-details {
+        padding: 10px;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
 }
 
 /* Classes communes pour les cartes */
