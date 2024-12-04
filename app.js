@@ -35,8 +35,8 @@ Vue.component("slideshow", {
     title: "Évaluer un dispositif pédagogique ou technique",
     text: "Analyser, mesurer et améliorer les dispositifs pédagogiques ou techniques.",
     modalContent: `
-      <p>Évaluer les dispositifs pour vérifier leur efficacité, leur pertinence et leur satisfaction auprès des utilisateurs.</p>
-      <p><ul>
+      <p><ul><li>Évaluer les dispositifs pour vérifier leur efficacité, leur pertinence et leur satisfaction auprès des utilisateurs.</li>
+      
         <li>Recueillir des données qualitatives et quantitatives auprès des utilisateurs (apprenants, enseignants, administrateurs).</li>
         <li>Analyser la performance et la satisfaction via des indicateurs clés adaptés.</li>
         <li>Proposer des améliorations basées sur les retours utilisateurs et les observations.</li>
@@ -49,8 +49,8 @@ Vue.component("slideshow", {
     title: "Structurer des processus pédagogiques et techniques",
     text: "Analyser et simplifier des processus pour une meilleure durabilité et efficacité.",
     modalContent: `
-      <p>Structurer les processus pédagogiques et techniques en prenant en compte les utilisateurs et le contexte.
-      <ul>
+      <p><ul><li>Structurer les processus pédagogiques et techniques en prenant en compte les utilisateurs et le contexte.</li>
+      
         <li>Simplifier et documenter les processus pour garantir leur robustesse et leur accessibilité.</li>
         <li>Collaborer avec des équipes pluridisciplinaires pour une approche intégrée.</li>
         <li>Identifier et résoudre les points de blocage pour fluidifier les flux.</li>
@@ -63,8 +63,8 @@ Vue.component("slideshow", {
     title: "Former et accompagner les utilisateurs dans la prise en main de solutions numériques",
     text: "Assurer une adoption réussie des outils numériques par les utilisateurs.",
     modalContent: `
-      <p>Accompagner les utilisateurs pour garantir une adoption fluide et efficace des outils numériques mis à leur disposition.</p>
-      <p><ul>
+      <p><ul><li>Accompagner les utilisateurs pour garantir une adoption fluide et efficace des outils numériques mis à leur disposition.</li>
+      
         <li>Analyser les besoins et niveaux de compétence des utilisateurs pour personnaliser la formation.</li>
         <li>Concevoir et dispenser des formations adaptées aux contextes pédagogiques et techniques.</li>
         <li>Créer des supports pédagogiques clairs et accessibles (guides, tutoriels, vidéos).</li>

@@ -181,6 +181,7 @@ header p {
 /* Fin de header prompt box style chat gpt. Style de l'encart */
 /* Conteneur pour centrer les boîtes */
 .prompt-container {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,7 +476,7 @@ h2 {
     overflow: hidden;
     margin-top: 10px;
     padding: 15px;
-    border: 1px solid var(--light-gblue); /* Bordure légère */
+    border: 1px solid var(--tech-blue); /* Bordure légère */
     border-radius: 8px;
     background-color: var(--light-gray);
     color: var(--primary);
@@ -489,6 +490,8 @@ h2 {
   .slide-details.show {
     opacity: 1;
     max-height: 500px; /* Ajustez selon la hauteur du contenu */
+    padding: 25px;
+    text-align: left;
   }
   
   
