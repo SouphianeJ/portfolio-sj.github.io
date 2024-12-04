@@ -492,34 +492,7 @@ h2 {
   }
   
   
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .slideshow-container {
-        padding: 15px;
-    }
 
-    .slideshow-container .arrow {
-        font-size: 2em;
-    }
-
-    .slideshow-container .slide h2 {
-        font-size: 1.5rem;
-    }
-
-    .slideshow-container .slide p {
-        font-size: 1rem;
-    }
-
-    .slideshow-container .random-button {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
-    .slide-details {
-        padding: 10px;
-        font-size: 0.9rem;
-        line-height: 1.4;
-      }
-}
 
 /* Classes communes pour les cartes */
 .card-base {
@@ -691,6 +664,32 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
+    .slideshow-container {
+        padding: 15px;
+    }
+
+    .slideshow-container .arrow {
+        font-size: 2em;
+    }
+
+    .slideshow-container .slide h2 {
+        font-size: 1.5rem;
+    }
+
+    .slideshow-container .slide p {
+        font-size: 1rem;
+    }
+
+    .slideshow-container .random-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    .slide-details {
+        padding: 10px;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+      
     .navbar .nav-link {
        font-size: 0.9em;
        display: inline-flex;
