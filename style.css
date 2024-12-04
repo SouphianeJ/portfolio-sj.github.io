@@ -364,6 +364,133 @@ h2 {
     transform: translateY(0);
 }
 
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    background-color: var(--secondary-light);
+    color: var(--primary);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Slideshow Navigation Arrows */
+.slideshow-container .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5em;
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.slideshow-container .arrow:hover {
+    color: var(--tech-blue);
+}
+
+.slideshow-container .arrow.left {
+    left: 10px;
+}
+
+.slideshow-container .arrow.right {
+    right: 10px;
+}
+
+/* Slide Content */
+.slideshow-container .slide {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.slideshow-container .slide h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--tech-violet);
+}
+
+.slideshow-container .slide p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--primary);
+}
+
+.slideshow-container .details-button {
+    margin-top: 15px;
+    background-color: var(--sage-green);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slideshow-container .details-button:hover {
+    background-color: var(--tech-violet);
+}
+
+/* Random Button */
+.slideshow-container .random-button {
+    margin-top: 20px;
+    display: block;
+    background-color: var(--tech-blue);
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slideshow-container .random-button:hover {
+    background-color: var(--sage-green);
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slideshow-container {
+        padding: 15px;
+    }
+
+    .slideshow-container .arrow {
+        font-size: 2em;
+    }
+
+    .slideshow-container .slide h2 {
+        font-size: 1.5rem;
+    }
+
+    .slideshow-container .slide p {
+        font-size: 1rem;
+    }
+
+    .slideshow-container .random-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
 
 /* Classes communes pour les cartes */
 .card-base {
