@@ -396,11 +396,11 @@ h2 {
 }
 
 .slideshow-container .arrow.left {
-    left: 10px;
+    left: 3%;
 }
 
 .slideshow-container .arrow.right {
-    right: 10px;
+    right: 3%;
 }
 
 /* Slide Content */
