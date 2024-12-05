@@ -489,9 +489,14 @@ h2 {
   /* Lorsque showDetails est vrai */
   .slide-details.show {
     opacity: 1;
-    max-height: 500px; /* Ajustez selon la hauteur du contenu */
-    padding: 25px;
+    max-height:fit-content;  /*Ajuster selon la hauteur du contenu */
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: left;
+
+  }
+  .slide-details.show li {
+    padding-bottom: 7px;
   }
   
   
