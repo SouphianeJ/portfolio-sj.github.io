@@ -1,3 +1,43 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    emailjs.init("NhW_jF2ZV7q2sGhfA");
+
+    const form = document.getElementById('contact-form');
+    const statusDiv = document.getElementById('status');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_8pa7eue', 'template_0zf4nxa', this)
+            .then(() => {
+                // Afficher une alerte succès
+                statusDiv.innerHTML = `<div class="alert alert-success" role="alert">Votre message a été envoyé avec succès !</div>`;
+
+                // Réinitialiser le formulaire
+                form.reset();
+
+                // Supprimer l'alerte après quelques secondes
+                setTimeout(() => {
+                    statusDiv.innerHTML = '';
+                }, 5000);
+            })
+            .catch((error) => {
+                console.error('FAILED...', error);
+
+                // Afficher une alerte d'échec
+                statusDiv.innerHTML = `<div class="alert alert-danger" role="alert">Une erreur s'est produite. Veuillez réessayer plus tard.</div>`;
+
+                // Supprimer l'alerte après quelques secondes
+                setTimeout(() => {
+                    statusDiv.innerHTML = '';
+                }, 5000);
+            });
+    });
+});
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const timelineItems = document.querySelectorAll(".timeline-item");
 
