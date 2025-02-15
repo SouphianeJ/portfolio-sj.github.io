@@ -67,9 +67,28 @@ Vue.component("slideshow", {
       
         <li>Analyser les besoins et niveaux de compétence des utilisateurs pour personnaliser la formation.</li>
         <li>Concevoir et dispenser des formations adaptées aux contextes pédagogiques et techniques.</li>
-        <li>Créer des supports pédagogiques clairs et accessibles (guides, tutoriels, vidéos).</li>
-        <li>Offrir un accompagnement continu et une assistance technique en cas de difficulté.</li>
+        <li>Créer des supports pédagogiques clairs et accessibles (web, tutoriels, vidéos, outils auteurs...).</li>
+        <li>Proposer un accompagnement adapté et évolutif et une assistance technique en cas de difficulté.</li>
+        <li>Créer et tester des scénarios d'usage d'utilisateurs
+</li>
         <li>Évaluer l’efficacité des formations et ajuster les contenus en fonction des retours utilisateurs.</li>
+      </ul>
+      </p>
+    `,
+  },
+{
+    title: "Formation de Formateurs",
+    text: "Préparer les Formateurs à transmettre efficacement et synthétiquement les contenus en leur faisant gagner du temps (outils de visio, LMS Moodle, méthodes pédagogiques (persona, apprentissage par projet etc..).",
+    modalContent: `
+      <p><ul><li>Accompagner les formateurs pour les rassurer, les former et les rendre autonomes sur un sujet, un logiciel ou une technique pédagogique.</li>
+      
+        <li>Analyser les besoins et extraire les points clés typiques facilitants et bloquants.</li>
+        <li>Concevoir des contenus, fiches et exercices pédagogiques et techniques clé en mains ou incomplètes pour permettre au formateur de s'approprier l'objet de la formation.</li>
+        <li>Adapter le format de la formation au formateur et à ses contraintes </li>
+        <li>Proposer des temps d'échange après la formation pour maintenir un lien et suivre le bon déroulement des formations du formateur</li>
+        <li>Assister et remédier en observant le formateur en action
+</li>
+        <li>Évaluer l’efficacité des formations et ajuster les contenus, la durée le format et les modalités en fonction des retours</li>
       </ul>
       </p>
     `,
@@ -107,11 +126,11 @@ new Vue({
             {
                 modalId: 'itProjectProgramModal',
                 title: 'Programme pédagogique en informatique et gestion de projet',
-                text: 'Conception et animation d’un programme pédagogique innovant intégrant classe inversée, jeux de rôle et portfolios numériques.',
+                text: 'Conception et animation d’un programme pédagogique innovant intégrant classe inversée, jeux de rôle, vidéo, dev web et portfolios numériques.',
                 modalTitle: 'Programme pédagogique en informatique et gestion de projet',
                 modalContent: `
                     <p>L'ILEPS forme des enseignants et des managers ainsi que des Licences Pro Commerce. Il était indispensable d'établir un programme pédagogique en informatique (bureautique avancée) et gestion de projet pour répondre à leurs besoins spécifiques.
-                    <br>Cela, en collaboration avec le responsable informatique et d’autres intervenants. L’objectif était de tenter également d'intégrer des approches innovantes comme la classe inversée, la correction par les pairs et les jeux de rôle pédagogiques.</p>
+                    <br>Cela, en collaboration avec le responsable informatique et d’autres intervenants. L’objectif était en ma qualité d'ingénieur pédagogique de tenter par la même occasion d'intégrer des approches comme la classe inversée, l'apprentissage par problèmes/projets, la correction par les pairs et les jeux de rôle pédagogiques.</p>
                     
                     <h5>Points clés du projet</h5>
                     <ul>
@@ -128,16 +147,16 @@ new Vue({
                         </li>                       
                         <li><strong>Cours de gestion de projet sous forme de jeu de rôle :</strong> Scénario fictif pour simuler des contraintes et livrables réels, avec répartition des rôles (chef, resp. qualité, resp. comm) et gestion des délais.</li>
                         <li><strong>Portfolio de compétence pour les licences 2 éducation:</strong> Portfolios numériques où ils définissent une compétence de l'enseignant et se positionnnent en apportant des preuves de leur niveau.</li>
-                        <li><strong>Portfolio de projet pour les licences 3 Pro:</strong> Portfolios numériques sous forme de site web.</li>
-                        <li><strong>Excel Avancé pour les licences 3 Management</strong></li>
-                        <li><strong>Collaboration et mise en ligne des contenus :</strong> Coordination avec les intervenants, mise en ligne des contenus sur Moodle, et suivi des étudiants.</li>
+                        <li><strong>Portfolio de projet pour les licences 3 Pro:</strong> Portfolios / page web de présentation CV en ligne au choix sous forme de site web codé par les étudiants non initiés à l'aide de l'ia. cela pour une production finale ayant l'ambition d'être directement utilisable et valorisable pour postuler (exemple de travail produit (1)(2)(3).</li>
+                        <li><strong>Excel Avancé pour les licences 3 Management : </strong> Remise à niveau et Construction du cours de manière à attaquer des problèmes qu'ils rencontreront en milieu pro : que faire de ces données ? comment leur donner du sens ! au delà de l'apprentissage de formules Excel développer un esprit critique et aborder sereinement le traitement de tableau massif pour extraire des indicateurs ou construire un dashboard de reporting etc. le niveau des étudiants futurs manager est exploité pour permettre aux "bons" de se positionner comme tuteurs et aider d'autres étudiants pour gagner des points supplémentaires</li>
+                        <li><strong>Collaboration, construction et mise en ligne des contenus :</strong> Coordination d'intervenants, mise en ligne et paramétrage des contenus sur le LMS Moodle, et suivi des étudiants, création d'examens et corrigés, correction de copies, réunions pédagogiques et cadrage...</li>
                     </ul>
                     
                     <h5>Résultats obtenus</h5>
                     <ul>
-                        <li><strong>Parcours structuré et cohérent :</strong> Meilleure adéquation et satisfaction des étudiants vis à vis des contenus enseignés.</li>
-                        <li><strong>Engagement accru des étudiants :</strong> Taux de rendu amélioré via la correction par les pairs</li>
-                        <li><strong>Valorisation des compétences :</strong> Portfolios numériques renforcent la professionnalisation et l’employabilité des étudiants.</li>
+                        <li><strong>Parcours structuré et cohérent :</strong> Meilleure adéquation et satisfaction des étudiants vis à vis des contenus enseignés notamment en LP3 retour très positifs sur la création de sites web de présentation avec l'IA.</li>
+                        <li><strong>Engagement des étudiants :</strong> Taux de rendu amélioré via la correction par les pairs par rapport à n-1 et n-2 environ 30% de rendus supplémentaires</li>
+                      
                         <li><strong>Moodle :</strong> Utilisation pratique mais fasitdieuse pour le paramétrage des modules Atelier (correction par les pairs).</li>
                         <li><strong>Ecarts :</strong> Tendance à creuser les écarts de niveaux bons très bons et moins bons,moins bons avec plus d'autonomie et l'évaluation par les pairs.</li>
                     </ul>
@@ -150,7 +169,7 @@ new Vue({
                 text: 'Création d\'un module tutoriel interactif utilisant Articulate Storyline pour prendre en main une plateforme.',
                 modalTitle: 'Création d\'un module interactif avec Storyline',
                 modalContent: `
-                    <p>Ce projet consistait à développer un module interactif guidé pour faire manipuler la plateforme Jupyter aux étudiants grâce à <strong>Articulate Storyline</strong>. L'objectif était de créer l'engagement sans faire face à l'apparente complexité de la plateforme pour des étudiants non familier de la programmation ni du langage Markdown.</p>
+                    <p>Un module interactif guidé pour faire manipuler la plateforme Jupyter aux étudiants grâce à <strong>Articulate Storyline</strong>. L'objectif était de créer l'engagement sans faire face à l'apparente complexité de la plateforme pour des étudiants non familier de la programmation ni du langage Markdown.</p>
                     
                     <h5>Étapes clés du projet</h5>
                     <ul>
@@ -158,7 +177,7 @@ new Vue({
                         <li><strong>Conception du storyboard :</strong> Élaboration d'un storyboard simple</li>
                         <li><strong>Développement du module avec Storyline :</strong> Utilisation d'Articulate Storyline pour filmer les actions et créer le module interactif, en intégrant un chemin, des scénarios et des feedbacks personnalisés.</li>
                         <li><strong>Tests et ajustements :</strong> Réalisation de tests utilisateurs avec un groupe d'étudiants pour recueillir des retours et apporter les ajustements nécessaires afin d'optimiser le module.</li>
-                        <li><strong>Intégration dans le LMS eCampus :</strong> Publication du module au format compatible SCORM pour une intégration dans la plateforme eCampus.</li>
+                        <li><strong>Intégration dans le LMS eCampus :</strong> Publication du module au format compatible SCORM pour une intégration dans la plateforme LMS.</li>
                     </ul>
                     
                     <h5>Résultats obtenus</h5>
@@ -174,24 +193,25 @@ new Vue({
                 text: 'Conception et déploiement de Small Private Online Courses (SPOCs).',
                 modalTitle: 'Développement de SPOCs pédagogiques',
                 modalContent: `
-                    <p>J'ai été impliqué dans la création de plusieurs SPOCs (Small Private Online Courses) sur Moodle, pour répondre aux besoins pédagogiques des formations et de l'hybridation.
-                    <br>A Paris-Saclay notamment pour mettre en place l'examen final (pour plus de 2000 étudiants). Ou encore à l'ILEPS cette fois en les concevant de A à Z en collaboration avec les enseignants.</p>
+                    <p>J'ai été impliqué dans la création de plusieurs SPOCs (Small Private Online Courses) sur le LMS Moodle, pour répondre aux besoins pédagogiques des formations et de l'hybridation.
+                    <br>A Paris-Saclay notamment pour mettre en place l'examen final (pour plus de 2000 étudiants). Ou encore à l'ILEPS cette fois en les concevant de A à Z en collaboration avec les enseignants notamment sur des projets de préparation au concours du CAPEPS et agrégation.</p>
                     
                     <h5>Étapes clés du projet</h5>
                     <ul>
-                        <li><strong>Analyse des besoins pédagogiques :</strong> Identification des objectifs de chaque SPOC en collaboration avec les enseignants et responsables pédagogiques. Chaque SPOC a été conçu pour répondre à des besoins précis, tels que la préparation à l'ORAL 3 ou l'Ecrit 1 & 2 du CAPEPS/ Agrégation.</li>
+                        <li><strong>Analyse des besoins pédagogiques :</strong> Identification des objectifs de chaque SPOC en collaboration avec les enseignants et responsables pédagogiques. Chaque SPOC a été conçu pour répondre à des besoins précis et un niveau d'exigence fort : la préparation à l'ORAL 3 ou l'Ecrit 1 & 2 du CAPEPS/ Agrégation.</li>
                         <li><strong>Création de contenus multimédias :</strong> Vidéos pédagogiques, supports pédagogiques adaptés et scénarisation thématique. Des formats variés ont été utilisés pour maximiser l’engagement et l’apprentissage des participants.</li>
                         <li><strong>Structuration des cours et intégration dans la plateforme :</strong> Organisation des SPOCs en modules et parcours progressifs, avec intégration des contenus dans la plateforme Moodle et des quizz permettant de déverouiller l'accès à la suite du contenu.</li>
                         <li><strong>Suivi et Evaluations :</strong> Mise en place d’un suivi et d'une évaluation QCM finale en plus des QCM formatifs.</li>
-                        <li><strong>Formation et accompagnement des enseignants :</strong> Accompagnement des enseignants pour leur permettre de suivre les étudiants.</li>
-                        <li><strong>Amélioration continue :</strong> Mise en place d'un QCM feedback des étudiants pour connaitre leur ressenti et améliorer le SPOC (répondre au QCM débloque un bêtisier des vidéos pédagogiques).</li>
+                        <li><strong>Formation et accompagnement des enseignants :</strong> Accompagnement des enseignants pour leur permettre de suivre les étudiants. Trouver un moyen de ne pas se heurter au "si je donne mon cours ils n'auront plus besoin de moi" pour aller vers le couplage entre l'utilisation autonome des ressources numériques du SPOC au temps d'accompagnement et à la plus-value de l'enseignement présentiel/distanciel avec l'enseignant. </li>
+                        <li><strong>Amélioration continue :</strong> Mise en place d'un QCM feedback des étudiants pour connaitre leur ressenti et améliorer le SPOC (répondre au QCM débloque un bêtisier que j'ai réalisé en montage des chutes des vidéos pédagogiques).</li>
                     </ul>
                     
                     <h5>Résultats obtenus</h5>
                     <ul>
-                        <li><strong>Apprentissage flexible et personnalisé :</strong> Les SPOCs ont permis aux étudiants et enseignants de suivre les formations à leur rythme, en s’adaptant à leurs besoins spécifiques.</li>
-                        <li><strong>Renforcement des compétences numériques des enseignants :</strong> Grâce aux SPOCs, de nombreux enseignants ont pu intégrer des pratiques numériques dans leur pédagogie.</li>
-                        <li><strong>Amélioration de l’engagement des apprenants :</strong> Les contenus interactifs et les évaluations en ligne ont contribué à maintenir l’attention et la motivation des participants.</li>
+                        <li><strong>Apprentissage flexible et personnalisé :</strong> Les SPOCs ont permis aux étudiants de suivre les formations à leur rythme, en s’adaptant à leurs besoins spécifiques dans une année de Master déjà dense 
+.</li>
+                        <li><strong>Renforcement des compétences numériques des enseignants :</strong> Grâce aux SPOCs, nous espérons aller à L'ILEPS vers une meilleure intégration de l'hybridation pour la prépa concours même si cela va demander du temps pour définir précisément les meilleures modalités et répartition entre temps autonome en ligne et temps face enseignant.</li>
+                        <li><strong>Amélioration de l’engagement des apprenants :</strong> Les contenus interactifs et les évaluations en ligne ont contribué à maintenir l’attention et la motivation des participants dans la majorité des cas et se sont dis satisfait / bien préparés pour le concours.</li>
                     </ul>
                 `
             },
@@ -223,16 +243,16 @@ new Vue({
                 modalTitle: 'Capsules vidéos de vulgarisation avec le Rapidmooc',
                 modalContent:
                ` <p>
-                    Ce projet avait pour objectif de produire une série de capsules vidéo pour les cours de physiologie, permettant aux étudiants de revoir les travaux pratiques (TP) et de mieux comprendre des notions complexes. En intégrant des démonstrations filmées et des animations illustratives, les vidéos visaient à renforcer l’apprentissage en permettant aux étudiants d’observer les procédures des TP, de manière à mieux assimiler les concepts de physiologie.
+                    Production d'une série de capsules vidéo pour les cours de physiologie, permettant aux étudiants de revoir les travaux pratiques (TP) et de mieux comprendre des notions complexes. En intégrant des démonstrations filmées et des animations illustratives, les vidéos visaient à renforcer l’apprentissage en permettant aux étudiants d’observer les procédures des TP, de manière à mieux assimiler les concepts de physiologie. Supervision d'enseignants et prestataires pour la création des contenus multimédias.
                 </p>
                 
                 <h5>Étapes clés du projet</h5>
                 <ul>
                     <li><strong>Recueil des images et écriture des scripts :</strong> En collaboration avec un doctorant, nous avons rédigé les scripts des vidéos pour structurer chaque concept en fonction des besoins pédagogiques identifiés. L’accent a été mis sur les points critiques, souvent difficiles à aborder en présentiel, afin de cibler les besoins spécifiques des étudiants.</li>
                     
-                    <li><strong>Filmage et création de contenu :</strong> J’ai assuré le filmage de démonstrations avec le dispositif Rapidmooc, et j’ai également accompagné le doctorant dans la prise de ses propres vidéos. Rapidmooc, avec son interface simple et ses outils de prompteur intégrés, a facilité la production de vidéos pédagogiques de qualité.</li>
+                    <li><strong>Tournage et création de contenu avec le Rapidmooc :</strong> J’ai assuré le filmage de démonstrations avec le dispositif Rapidmooc, et j’ai également accompagné le doctorant dans la prise de ses propres vidéos. L'outil Rapidmooc, est facile à prendre en main avec son interface intuitive et ses outils de prompteur intégrés,ce qui permet de gagner du temps de post-production. J'ai dû réaliser moi-même certaines vidéos avec mon image et ma voix faute de temps, ce qui était malgré la désagréable expérience de se voir et s'écouter les premières fois plutôt formateur pour conseiller les futurs enseignants à qui j'ai appris à réaliser des capsules vidéo.</li>
                     
-                    <li><strong>Conception des schémas et animations :</strong> J’ai travaillé avec un prestataire pour la réalisation des animations. À partir des schémas que nous avons créés, j’ai défini un cahier des charges précis pour guider le prestataire dans l’animation des concepts physiologiques, afin de renforcer la compréhension visuelle des étudiants.</li>
+                    <li><strong>Conception des schémas et animations :</strong> J’ai travaillé avec un prestataire pour la réalisation des animations. À partir des schémas que nous avons créés, j’ai défini un cahier des charges précis pour guider le prestataire dans l’animation des concepts physiologiques. L'objectif était de rendre le plus attractif et simple la compréhension visuelle des étudiants.</li>
                     
                     <li><strong>Montage et finalisation des vidéos :</strong> J’ai pris en charge plusieurs étapes du montage avec le logiciel Camtasia, intégrant les éléments animés et filmés pour créer une continuité visuelle et rendre le contenu plus fluide.</li>
                 </ul>
@@ -240,16 +260,14 @@ new Vue({
                 <h5>Résultats obtenus</h5>
                 <ul>
                     <li><strong>Renforcement de l’apprentissage par l'action :</strong> Les vidéos ont permis aux étudiants de revoir les TP et d’observer les procédures en détail, ce qui a facilité la compréhension des notions plus complexes.</li>
-                    <li><strong>Engagement des étudiants :</strong> Le format court et visuel des vidéos a soutenu l’engagement des étudiants, leur offrant la possibilité de réviser les démonstrations à leur rythme.</li>
-                    <li><strong>Retour positif des enseignants et étudiants :</strong> Les vidéos ont été bien accueillies comme complément aux cours, et ce type de support a suscité un intérêt pour des initiatives similaires dans d’autres disciplines.</li>
+                    <li><strong>Engagement des étudiants :</strong> Le format court et visuel des vidéos a soutenu l’engagement des étudiants, avec la possibilité de réviser les démonstrations à leur rythme.</li>
+                    <li><strong>Retour positif des enseignants et étudiants :</strong> Les vidéos ont été bien accueillies comme complément aux cours sur le LMS Moodle et ce type de support a suscité un intérêt pour des initiatives similaires dans d’autres disciplines.</li>
                 </ul>
                 
-                <p>
-                    Ce projet a permis d'introduire de nouveaux supports visuels dans les cours de physiologie en s’appuyant sur des outils multimédia. Mon rôle a couvert l’ensemble du processus, de l’écriture des scripts et du filmage, à la supervision des animations et au montage final.
-                </p>`
+               
             }
                 
-            // Ajoutez d'autres projets si nécessaire
+            
         ],
     
   
