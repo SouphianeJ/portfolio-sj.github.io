@@ -298,7 +298,7 @@ new Vue({
                     <h5>Exemples</h5>
                     <ul>
                         <li><strong>Génération des PV de Jury </strong> </li>
-                        <li><strong>Génération des Plannings</strong> </li>
+                        <li><strong>Génération de Plannings</strong> </li>
                         <li><strong>Exportation des notes vers Apogée</strong> </li>
                         
                     </ul>
