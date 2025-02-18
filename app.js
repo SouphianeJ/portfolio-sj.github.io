@@ -77,7 +77,7 @@ Vue.component("slideshow", {
     `,
   },
 {
-    title: "Formation de Formateurs",
+    title: "Former de Formateurs",
     text: "Préparer les Formateurs à transmettre efficacement et synthétiquement les contenus en leur faisant gagner du temps (outils de visio, LMS Moodle, méthodes pédagogiques (persona, apprentissage par projet etc..).",
     modalContent: `
       <p><ul><li>Accompagner les formateurs pour les rassurer, les former et les rendre autonomes sur un sujet, un logiciel ou une technique pédagogique.</li>
@@ -263,7 +263,7 @@ new Vue({
                     <li><strong>Engagement des étudiants :</strong> Le format court et visuel des vidéos a soutenu l’engagement des étudiants, avec la possibilité de réviser les démonstrations à leur rythme.</li>
                     <li><strong>Retour positif des enseignants et étudiants :</strong> Les vidéos ont été bien accueillies comme complément aux cours sur le LMS Moodle et ce type de support a suscité un intérêt pour des initiatives similaires dans d’autres disciplines.</li>
                 </ul>
-                
+                `
                
             }
                 
