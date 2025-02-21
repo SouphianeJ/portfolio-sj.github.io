@@ -771,8 +771,42 @@ footer a:hover {
        .timeline-item p{
         margin-bottom: 0;
        }
+    }
    
-   
-}
+       .header-container {
+        background: linear-gradient(135deg, #0a0a1a 30%, #1a1a2f 100%);
+        backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(90, 200, 250, 0.1);
+    }
+    
+    .glassmorphism-btn {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(90, 200, 250, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    .holographic-text {
+        background: linear-gradient(45deg, #5ac8fa, #ff2d55);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .neon-halo {
+        box-shadow: 0 0 30px 5px rgba(90, 200, 250, 0.3);
+    }
+    
+    /* Micro-interactions au survol */
+    .nav-button:hover {
+        transform: translateY(-3px);
+        background: rgba(90, 200, 250, 0.1);
+    }
+    
+    /* Animation 3D au survol de la photo */
+    [data-hover="3d-rotate"]:hover {
+        transform: rotateY(15deg) scale(1.05);
+    }
+       
+
 
 

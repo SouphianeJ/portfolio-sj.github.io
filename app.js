@@ -452,3 +452,53 @@ new Vue({
         }
     }
 });
+
+Vue.component('vue-navbar', {
+    template: `
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue fixed-top">
+        <a class="navbar-brand" href="#">Souphiane Jender</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li v-for="link in navLinks" :key="link.href" class="nav-item">
+                    <a class="nav-link" :href="link.href">
+                        <i :class="link.icon"></i> {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    `,
+    data() {
+        return {
+            navLinks: [
+                { text: "À propos", href: "#about", icon: "fas fa-user" },
+                { text: "Compétences", href: "#skills", icon: "fas fa-cogs" },
+                { text: "Projets", href: "#tech-projects", icon: "fas fa-project-diagram" },
+                { text: "Parcours Universitaire", href: "#experience", icon: "fas fa-graduation-cap" },
+                { text: "Contact", href: "#contact", icon: "fas fa-envelope" }
+            ]
+        };
+    }
+});
+
+
+Vue.component('vue-footer', {
+    template: `
+    <footer class="bg-dark-blue text-white text-center py-3">
+        <p>© Souphiane Jender - 
+            <a href="https://www.linkedin.com/in/souphiane-jender-paris-sud-saclay/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/SouphianeJ" target="_blank">GitHub</a>
+        </p>
+    </footer>
+    `
+});
+
+
+new Vue({
+    el: '#vue-body'
+});
