@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Simulation terminal
     const commands = [
         '> souphiane --skills --format=json',
-        '{\n "compétences": ["Python", "VBA", "DevOps"],\n "disponibilité": "🟢 En mission"\n}',
+        '{\n "compétences techniques": ["Python", "VBA", "Web", "PHP", "SQL"],\n"points forts": ["Analyser", "Rechercher", "Améliorer", "Solutionner", "Présenter"],\n "disponibilité": ["🟢 Freelance", "🟢 CDI"]\n}',
         '> portfolio --version',
         'v2.3.1 - Brutalist Edition'
     ];

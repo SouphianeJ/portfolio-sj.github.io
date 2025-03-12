@@ -40,6 +40,11 @@
     --tech-neon: #00F3FF;
     --edu-primary: #FF7675;
     --edu-secondary: #FDCB6E;
+    --proj-primary: #00b822;
+    --proj-secondary: #00b894;
+    --news-primary: #000000;
+    --news-secondary:#828282;
+;
 }
 
 body {
@@ -93,6 +98,16 @@ body {
 .gateway[data-theme="edu"] {
     color: var(--edu-primary);
     box-shadow: 12px 12px 0 var(--edu-secondary);
+}
+
+.gateway[data-theme="proj"] {
+  color: var(--proj-primary);
+  box-shadow: 12px 12px 0 var(--proj-secondary);
+}
+
+.gateway[data-theme="news"] {
+  color: var(--news-primary);
+  box-shadow: 12px 12px 0 var(--news-secondary);
 }
 
 /* Animations */
